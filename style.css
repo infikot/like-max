@@ -1,0 +1,136 @@
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', Roboto, sans-serif; background: #000; color: #fff; overflow-x: hidden; line-height: 1.5; }
+
+/* Стилизация скроллбара страницы */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.02); }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 10px; border: 2px solid transparent; background-clip: padding-box; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.3); border: 2px solid transparent; background-clip: padding-box; }
+html { scrollbar-color: rgba(255,255,255,0.15) rgba(255,255,255,0.02); scrollbar-width: thin; }
+
+/* Paper.js Canvas Background */
+#bgCanvas { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: auto; }
+
+/* Общие анимации появления */
+.animate-fade { opacity: 0; transform: translateY(20px); animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; } .delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; } .delay-5 { animation-delay: 0.5s; }
+@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+
+.container { max-width: 800px; margin: 0 auto; padding: 20px 20px 100px; }
+
+/* Хедер */
+header { text-align: center; padding: 60px 0 30px; }
+.logo-wrapper { display: inline-block; margin-bottom: 20px; }
+
+/* Иконка — 200x200 + анимация "капля" при скролле */
+.pure-white {
+    width: 200px;
+    height: 200px;
+    border-radius: 48px;
+    filter: brightness(0) invert(1) drop-shadow(0 4px 30px rgba(255,255,255,0.2));
+    transition: transform 0.05s linear, opacity 0.05s linear, border-radius 0.15s ease;
+    will-change: transform, opacity, border-radius;
+}
+
+.title { font-size: 3rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 5px; }
+.subtitle { color: rgba(255,255,255,0.5); font-size: 1rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; }
+
+/* Ссылка @infikot */
+.author-link { color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.3s; }
+.author-link:hover { color: rgba(255,255,255,0.8); }
+
+/* Стекло (Glassmorphism) */
+.glass-panel { background: rgba(20, 20, 20, 0.4); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 30px; margin-bottom: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); transition: transform 0.3s, border-color 0.3s; }
+.glass-panel:hover { border-color: rgba(255,255,255,0.15); transform: translateY(-2px); }
+
+/* Версии */
+.version-panel { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; padding: 25px; }
+.stat-box { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px; }
+.stat-value { font-size: 1.25rem; font-weight: 600; }
+
+/* Блок внимания */
+.alert-panel { border: 1px solid rgba(255, 255, 255, 0.15); background: rgba(255,255,255,0.02); }
+.alert-header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+.alert-header h3 { font-size: 1.2rem; font-weight: 600; }
+.alert-header svg { width: 22px; height: 22px; color: #fff; }
+.alert-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.glass-link { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); color: #fff; text-decoration: none; padding: 12px; border-radius: 12px; text-align: center; font-size: 0.9rem; transition: background 0.3s; cursor: pointer; font-family: inherit; font-weight: inherit; outline: none; }
+.glass-link:hover { background: rgba(255,255,255,0.1); }
+.crash-note { font-size: 0.85rem; color: rgba(255,255,255,0.6); display: flex; align-items: center; gap: 10px; background: rgba(0,0,0,0.3); padding: 12px 16px; border-radius: 12px; }
+.badge { background: #fff; color: #000; padding: 2px 8px; border-radius: 6px; font-weight: 700; font-size: 0.7rem; }
+
+/* Списки */
+.section-title { font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; }
+.clean-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.clean-list li { position: relative; padding-left: 24px; color: rgba(255,255,255,0.8); font-size: 0.95rem; line-height: 1.6; }
+.clean-list li::before { content: "—"; position: absolute; left: 0; color: rgba(255,255,255,0.4); }
+
+/* Док с кнопками */
+.action-dock { display: flex; gap: 15px; align-items: stretch; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 18px 24px; border-radius: 16px; font-size: 1.05rem; font-weight: 600; cursor: pointer; border: none; transition: all 0.2s; text-decoration: none; font-family: inherit; }
+.btn svg { width: 20px; height: 20px; }
+.btn-primary { flex: 1; background: #fff; color: #000; box-shadow: 0 4px 15px rgba(255,255,255,0.2); }
+.btn-primary:active { transform: scale(0.98); background: #e0e0e0; }
+.btn-secondary { background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); }
+.btn-secondary:active { background: rgba(255,255,255,0.15); }
+.btn-icon-only { padding: 18px; flex-shrink: 0; }
+
+/* Блок актуальности в модалке */
+.actuality-warning {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 170, 0, 0.06);
+    border: 1px solid rgba(255, 170, 0, 0.2);
+    border-radius: 16px;
+    text-align: center;
+}
+.actuality-icon { margin-bottom: 12px; }
+.actuality-icon svg { width: 32px; height: 32px; color: #ffaa00; stroke: #ffaa00; }
+.actuality-text { font-size: 0.9rem !important; color: rgba(255, 255, 255, 0.7) !important; margin-bottom: 16px !important; line-height: 1.5; }
+.actuality-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: rgba(255, 170, 0, 0.1);
+    border: 1px solid rgba(255, 170, 0, 0.25);
+    border-radius: 12px;
+    color: #ffcc44;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.3s, border-color 0.3s;
+}
+.actuality-btn:hover { background: rgba(255, 170, 0, 0.18); border-color: rgba(255, 170, 0, 0.4); }
+.actuality-btn svg { width: 16px; height: 16px; stroke: #ffcc44; flex-shrink: 0; }
+
+/* Модальное окно */
+.modal { display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
+.modal-content { width: 100%; max-width: 600px; max-height: 85vh; display: flex; flex-direction: column; margin: 0; }
+.modal-content, .modal-content * { user-select: text; }
+.close-btn { position: absolute; top: 20px; right: 25px; font-size: 24px; cursor: pointer; color: rgba(255,255,255,0.5); transition: color 0.2s; }
+.close-btn:hover { color: rgba(255,255,255,0.9); }
+.modal-title { font-size: 1.5rem; margin-bottom: 20px; }
+.scrollable { overflow-y: auto; padding-right: 10px; flex: 1; margin-bottom: 20px; }
+.scrollable::-webkit-scrollbar { width: 4px; }
+.scrollable::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
+.scrollable h3 { font-size: 1.1rem; margin: 20px 0 10px; }
+.scrollable p, .scrollable li { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-bottom: 10px; }
+.scrollable ul { padding-left: 20px; }
+.scrollable a { color: #fff; }
+.modal-actions { display: flex; gap: 10px; }
+
+/* Адаптив (Android) */
+@media (max-width: 600px) {
+    .pure-white { width: 140px; height: 140px; border-radius: 32px; }
+    .title { font-size: 2.5rem; }
+    header { padding: 20px 0; }
+    .glass-panel { padding: 20px; border-radius: 20px; }
+    .action-dock { flex-direction: row; flex-wrap: nowrap; }
+    .action-dock .btn-primary { flex: 1; min-width: 0; }
+    .action-dock .btn-icon-only { flex: 0 0 auto; }
+    .modal-actions { flex-direction: column; }
+}

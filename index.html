@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>like Max - Модификация</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bgCanvas" resize></canvas>
+    
+    <div class="container">
+        <header class="animate-fade">
+            <div class="logo-wrapper">
+                <img src="src/icon.webp" alt="Logo" class="logo pure-white" id="logo">
+            </div>
+            <h1 class="title" id="appName">like Max</h1>
+            <p class="subtitle">by <a href="https://t.me/infikot" target="_blank" class="author-link">@infikot</a></p>
+        </header>
+
+        <div class="glass-panel version-panel animate-fade delay-1">
+            <div class="stat-box">
+                <span class="stat-label">Версия мода</span>
+                <span class="stat-value" id="modVersion">...</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">База MAX</span>
+                <span class="stat-value" id="originalVersion">...</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Android</span>
+                <span class="stat-value" id="androidVersion">...</span>
+            </div>
+        </div>
+
+        <div class="glass-panel alert-panel animate-fade delay-2">
+            <div class="alert-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <h3>Обязательно к прочтению</h3>
+            </div>
+            <div class="alert-links">
+                <button class="glass-link" onclick="openModal('rules')">Правила и ответственность</button>
+                <button class="glass-link" onclick="openModal('agreement')">Доп. соглашение</button>
+                <a href="https://t.me/infikot_dev/3/51" target="_blank" class="glass-link">Блок-лист доменов</a>
+            </div>
+            <div class="crash-note">
+                <span class="badge">ВАЖНО</span> При первом запуске возможен краш. Просто перезайдите в приложение.
+            </div>
+        </div>
+
+        <div class="glass-panel animate-fade delay-3">
+            <h2 class="section-title">Что нового (0.0.2)</h2>
+            <ul class="clean-list" id="changelogList">
+                <li>Загрузка...</li>
+            </ul>
+        </div>
+
+        <div class="glass-panel animate-fade delay-4">
+            <h2 class="section-title">Базовый функционал</h2>
+            <ul class="clean-list" id="featuresList">
+                <li>Загрузка...</li>
+            </ul>
+        </div>
+
+        <div class="action-dock animate-fade delay-5">
+            <a href="https://t.me/infikot_dev/22" target="_blank" class="btn btn-secondary btn-icon-only">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </a>
+            <button class="btn btn-primary" id="downloadBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span id="downloadBtnText">Скачать мод</span>
+            </button>
+            <a href="https://github.com/infikot/like-max" target="_blank" class="btn btn-secondary btn-icon-only">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Универсальная модалка -->
+    <div id="universalModal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 class="modal-title" id="modalTitle">Соглашение</h2>
+            <div class="modal-body scrollable" id="modalBody">
+                <p>Загрузка...</p>
+            </div>
+            <div class="modal-actions" id="modalActions"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
