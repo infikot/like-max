@@ -1,7 +1,7 @@
 {
   "appName": "like Max",
   "modVersion": "0.0.2",
-  "originalVersion": "Latest",
+  "originalVersion": "26.6.1 (6562)",
   "androidVersion": "11~16",
   "downloadUrl": "https://t.me/infikot_dev",
   "changelog": [
@@ -23,4 +23,5 @@
     "Кастомная иконка и изменённое название приложения",
     "Максимально очищенный AndroidManifest от мусорных разрешений"
   ]
+
 }
