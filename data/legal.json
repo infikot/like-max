@@ -1,0 +1,232 @@
+{
+  "updated": "2026-10-28",
+  "docs": {
+    "tos": {
+      "title": { "ru": "Пользовательское соглашение like Max", "en": "like Max Terms of Use" },
+      "body": {
+        "ru": [
+          { "h": "1. Общие положения" },
+          { "p": "Настоящее Пользовательское соглашение (далее — «Соглашение») регулирует отношения между автором проекта like Max (далее — «Автор») и пользователем неофициальной модификации клиента MAX для Android (далее — «Модификация»)." },
+          { "p": "Устанавливая, запуская или используя Модификацию, вы подтверждаете, что ознакомились с Соглашением, понимаете его условия и принимаете их в полном объёме. Если вы не согласны — не устанавливайте и не используйте Модификацию." },
+          { "h": "2. Статус Модификации" },
+          { "p": "Модификация — это изменённая версия клиентского приложения MAX для Android, созданная сообществом. Она не является официальным продуктом, не одобрена правообладателем сервиса MAX и распространяется бесплатно, без какой-либо монетизации." },
+          { "h": "3. Лицензия и допустимое использование" },
+          { "ul": [
+            "Вам разрешается устанавливать и использовать Модификацию в личных некоммерческих целях.",
+            "Вы можете передавать другим неизменённые официальные сборки со ссылкой на первоисточник.",
+            "Запрещается продавать Модификацию, включать её в платные подписки и размещать в магазинах приложений.",
+            "Запрещается распространять изменённые сборки, выдавая их за официальные релизы проекта."
+          ] },
+          { "h": "4. Обязанности пользователя" },
+          { "ul": [
+            "Самостоятельно ознакомиться с действующими документами сервиса MAX до начала использования Модификации.",
+            "Использовать Модификацию только со своим аккаунтом и в законных целях.",
+            "Не применять Модификацию для обмана, причинения вреда третьим лицам или нарушения их прав.",
+            "Учитывать, что после обновлений сервиса MAX отдельные функции могут работать нестабильно."
+          ] },
+          { "h": "5. Отказ от гарантий" },
+          { "p": "Модификация предоставляется «как есть» (as is) и «как доступно», без явных или подразумеваемых гарантий, включая гарантии работоспособности, пригодности для конкретных целей и отсутствия ошибок. Автор не гарантирует бесперебойную работу, отсутствие сбоев и совместимость с будущими версиями MAX." },
+          { "h": "6. Ограничение ответственности" },
+          { "p": "Автор не несёт ответственности за любые прямые или косвенные убытки, потерю данных, упущенную выгоду и иные последствия, возникшие из-за использования Модификации или невозможности её использования." },
+          { "h": "7. Риск ограничения аккаунта" },
+          { "note": { "kind": "warn", "title": "Ключевой риск", "text": "Использование Модификации нарушает Пользовательское соглашение сервиса MAX. Правообладатель вправе приостановить, ограничить или прекратить доступ пользователя к сервису, вплоть до блокировки аккаунта. Этот риск пользователь принимает на себя добровольно." } },
+          { "h": "8. Интеллектуальная собственность" },
+          { "p": "Все права на оригинальное приложение и сервис MAX принадлежат их правообладателю. Проект не претендует на эти права и не использует оригинальный продукт для извлечения прибыли. Если вы считаете, что какой-либо материал нарушает ваши права, напишите Автору — обращение будет рассмотрено, а материал при необходимости удалён." },
+          { "h": "9. Изменение условий" },
+          { "p": "Соглашение может обновляться вместе с новой версией Модификации. Актуальная редакция всегда доступна на этой странице, дата редакции указана в начале документа." },
+          { "h": "10. Контакты" },
+          { "p": "Вопросы по Соглашению и работе Модификации: <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> или <a href='https://t.me/infikot' target='_blank' rel='noopener'>@infikot</a>. Баг-репорты присылайте в Telegram @infikot и прикладывайте логи из приложения — так проблему можно воспроизвести быстрее." }
+        ],
+        "en": [
+          { "h": "1. General provisions" },
+          { "p": "These Terms of Use (the “Terms”) govern the relationship between the author of the like Max project (the “Author”) and the user of the unofficial MAX client modification for Android (the “Modification”)." },
+          { "p": "By installing, launching or using the Modification you confirm that you have read these Terms, understand them and accept them in full. If you do not agree, do not install or use the Modification." },
+          { "h": "2. Status of the Modification" },
+          { "p": "The Modification is a community-built, modified version of the MAX client app for Android. It is not an official product, is not endorsed by the rights holder of the MAX service and is distributed free of charge with no monetisation." },
+          { "h": "3. Licence and permitted use" },
+          { "ul": [
+            "You may install and use the Modification for personal, non-commercial purposes.",
+            "You may share unmodified official builds with a link to the primary source.",
+            "You may not sell the Modification, include it in paid subscriptions or publish it in app stores.",
+            "You may not distribute modified builds while presenting them as official releases."
+          ] },
+          { "h": "4. User responsibilities" },
+          { "ul": [
+            "Read the current MAX service documents before using the Modification.",
+            "Use the Modification only with your own account and for lawful purposes.",
+            "Do not use the Modification to deceive, harm or infringe the rights of others.",
+            "Keep in mind that individual features may become unstable after MAX is updated."
+          ] },
+          { "h": "5. Disclaimer of warranties" },
+          { "p": "The Modification is provided “as is” and “as available”, without any express or implied warranties, including operability, fitness for a particular purpose and absence of errors. The Author does not guarantee uninterrupted operation, freedom from failures or compatibility with future MAX versions." },
+          { "h": "6. Limitation of liability" },
+          { "p": "The Author is not liable for any direct or indirect damages, data loss, lost profits or other consequences arising from the use of, or inability to use, the Modification." },
+          { "h": "7. Risk of account restriction" },
+          { "note": { "kind": "warn", "title": "The key risk", "text": "Using the Modification violates the MAX terms of use. The rights holder may suspend, restrict or terminate a user's access to the service, including blocking the account. The user accepts this risk voluntarily." } },
+          { "h": "8. Intellectual property" },
+          { "p": "All rights to the original application and the MAX service belong to their rights holder. This project claims no such rights and does not profit from the original product. If you believe any material infringes your rights, contact the Author — the request will be reviewed and the material removed if necessary." },
+          { "h": "9. Changes to the Terms" },
+          { "p": "These Terms may be updated together with a new version of the Modification. The current revision is always available on this page, with the revision date shown at the top." },
+          { "h": "10. Contacts" },
+          { "p": "Questions about the Terms and the Modification: <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> or <a href='https://t.me/infikot' target='_blank' rel='noopener'>@infikot</a>. Send bug reports to Telegram @infikot and attach the in-app logs — that makes the issue much faster to reproduce." }
+        ]
+      }
+    },
+    "pp": {
+      "title": { "ru": "Политика конфиденциальности like Max", "en": "like Max Privacy Policy" },
+      "body": {
+        "ru": [
+          { "h": "1. Коротко" },
+          { "p": "Модификация не собирает, не передаёт и не продаёт персональные данные. У проекта нет собственных серверов, аналитики и рекламных SDK." },
+          { "h": "2. Какие данные обрабатываются" },
+          { "ul": [
+            "Данные аккаунта MAX — номер телефона, сообщения, контакты — обрабатываются на вашем устройстве и на серверах сервиса MAX, как и в оригинальном приложении.",
+            "Настройки Модификации и её модулей хранятся локально на устройстве.",
+            "Удалённые сообщения, сохранённые Ayu-модулем, остаются локально и не покидают устройство.",
+            "Логи приложения (до 150 строк) хранятся локально, нужны только для диагностики и могут быть очищены в любой момент."
+          ] },
+          { "h": "3. Разрешения приложения" },
+          { "ul": [
+            "Доступ к файлам и памяти — для выбора обоев, установки фонов и загрузки файлов.",
+            "Микрофон и камера — для звонков и съёмки, как в оригинальном приложении.",
+            "Сеть — для работы мессенджера.",
+            "Уведомления — для сообщений и звонков."
+          ] },
+          { "h": "4. Сетевые соединения" },
+          { "p": "Модификация блокирует обращения к доменам аналитики, трекеров и сбора статистики, сокращая объём телеметрии, отправляемой приложением. Актуальный список блокировок публикуется в канале отдельным сообщением." },
+          { "h": "5. Передача данных третьим лицам" },
+          { "p": "Автор не получает доступ к вашим данным и не передаёт их третьим лицам. Данные могут передаваться только самому сервису MAX — это неотъемлемая часть работы мессенджера." },
+          { "h": "6. Дети" },
+          { "p": "Модификация не предназначена для детей и не собирает данные о них." },
+          { "h": "7. Ваши возможности" },
+          { "ul": [
+            "Удалить все локальные данные Модификации можно, удалив приложение или очистив его данные в настройках Android.",
+            "Любой модуль можно выключить в настройках Модификации — это не повлияет на работу мессенджера.",
+            "Присланные вручную логи вы можете удалить в приложении перед отправкой и после отправки."
+          ] },
+          { "h": "8. Изменения политики" },
+          { "p": "Политика обновляется вместе с Модификацией. Дата редакции указана в начале документа; о существенных изменениях сообщается в канале." },
+          { "h": "9. Контакты" },
+          { "p": "Вопросы по обработке данных: <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> или <a href='https://t.me/infikot' target='_blank' rel='noopener'>@infikot</a>." }
+        ],
+        "en": [
+          { "h": "1. In short" },
+          { "p": "The Modification does not collect, transmit or sell personal data. The project has no servers, analytics or advertising SDKs of its own." },
+          { "h": "2. What data is processed" },
+          { "ul": [
+            "MAX account data — phone number, messages, contacts — is processed on your device and on the MAX service servers, exactly as in the original app.",
+            "Modification and module settings are stored locally on your device.",
+            "Deleted messages kept by the Ayu module stay local and never leave the device.",
+            "App logs (up to 150 lines) are stored locally, exist only for diagnostics and can be cleared at any time."
+          ] },
+          { "h": "3. App permissions" },
+          { "ul": [
+            "File and storage access — to pick wallpapers, set backgrounds and download files.",
+            "Microphone and camera — for calls and capture, as in the original app.",
+            "Network — for the messenger to work.",
+            "Notifications — for messages and calls."
+          ] },
+          { "h": "4. Network connections" },
+          { "p": "The Modification blocks requests to analytics, tracking and statistics domains, reducing the amount of telemetry the app sends. The current block list is published as a separate post in the channel." },
+          { "h": "5. Sharing with third parties" },
+          { "p": "The Author has no access to your data and does not share it with third parties. Data can only be transmitted to the MAX service itself — that is an inherent part of how the messenger works." },
+          { "h": "6. Children" },
+          { "p": "The Modification is not intended for children and does not collect data about them." },
+          { "h": "7. Your options" },
+          { "ul": [
+            "You can delete all local modification data by uninstalling the app or clearing its data in Android settings.",
+            "Any module can be switched off in the modification settings without affecting the messenger.",
+            "Logs you send manually can be deleted in the app before and after sending."
+          ] },
+          { "h": "8. Changes to this policy" },
+          { "p": "This policy is updated together with the Modification. The revision date is shown at the top; significant changes are announced in the channel." },
+          { "h": "9. Contacts" },
+          { "p": "Data processing questions: <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> or <a href='https://t.me/infikot' target='_blank' rel='noopener'>@infikot</a>." }
+        ]
+      }
+    },
+    "legal": {
+      "title": { "ru": "Правовой статус модификации like Max", "en": "Legal status of the like Max modification" },
+      "body": {
+        "ru": [
+          { "h": "1. Правовой статус и аффилированность" },
+          { "p": "«like Max» — неофициальная модификация сервиса «MAX» (далее — Модификация), созданная сообществом без участия правообладателя. Проект не представляет правообладателя и не действует от его имени." },
+          { "h": "2. Авторство и монетизация" },
+          { "p": "Автор Модификации не аффилирован с правообладателем, не претендует на права на оригинальное приложение и не монетизирует продукт. Проект является некоммерческим: сборки распространяются бесплатно." },
+          { "h": "3. Техническая реализация и добросовестное использование" },
+          { "ul": [
+            "Модификация вносит изменения исключительно в клиентскую часть приложения, не вмешиваясь в работу серверов сервиса MAX.",
+            "Используются публично доступные методы взаимодействия с сервисом, аналогичные веб-версии; нормальная работа оригинального сервиса не нарушается.",
+            "Функции подмены данных устройства и ограничения телеметрии направлены на защиту конфиденциальности пользователя и сокращение сбора данных, а не на обход систем безопасности."
+          ] },
+          { "note": { "kind": "info", "title": "Примечание", "text": "Из-за возможных проверок подписи APK на стороне сервиса отдельные функции, например «Цифровой ID», могут работать некорректно или быть недоступны в Модификации." } },
+          { "h": "4. Соотношение с Пользовательским соглашением «MAX»" },
+          { "p": "Использование Модификации нарушает действующее Пользовательское соглашение сервиса «MAX». Правообладатель публикует актуальные редакции документов на своём официальном сайте; перед установкой ознакомьтесь с ними самостоятельно." },
+          { "p": "<strong>Запрет на переработку.</strong> Соглашение MAX запрещает обратную разработку, декомпиляцию, обратное ассемблирование и изменение приложения. Модификация, меняющая функционал клиента, подпадает под это ограничение." },
+          { "p": "<strong>Запрет на вмешательство.</strong> Соглашение MAX запрещает использовать автоматизированные скрипты и иным образом влиять на функции сервиса без разрешения правообладателя." },
+          { "h": "5. Возможные последствия для пользователя" },
+          { "ul": [
+            "Блокировка аккаунта: правообладатель вправе приостанавливать, ограничивать или прекращать доступ пользователя к сервису и его отдельным функциям.",
+            "Ограничение функциональности: отдельные возможности приложения могут стать недоступны из-за проверок на стороне сервиса."
+          ] },
+          { "h": "6. Отказ от ответственности автора" },
+          { "ul": [
+            "<strong>Принятие рисков.</strong> Загружая, устанавливая и используя Модификацию, пользователь осознаёт и принимает все юридические, технические и финансовые риски, связанные с нарушением Пользовательского соглашения MAX.",
+            "<strong>Безопасность.</strong> Автор не гарантирует отсутствие вредоносного кода, ошибок и иных нежелательных последствий и не собирает персональные данные пользователей.",
+            "<strong>Ответственность.</strong> Автор не несёт ответственности за любые последствия, убытки или ущерб, связанные с использованием Модификации, включая блокировку аккаунта. Модификация предоставляется «как есть» без каких-либо гарантий."
+          ] },
+          { "h": "7. Правила сообщества" },
+          { "p": "Материалы публикуются в Telegram-канале и его ветках. Использование любых неофициальных версий, модификаций и патчей может нарушать условия пользовательских соглашений правообладателей оригинальных приложений." },
+          { "ul": [
+            "Модификации в канале являются неофициальными; автор канала не претендует на права издателей и не монетизирует продукт.",
+            "Использование модификаций осуществляется на личный страх и риск пользователя.",
+            "Перед использованием любой модификации пользователь обязан самостоятельно ознакомиться с оригиналами документов правообладателя."
+          ] },
+          { "h": "8. Досудебное урегулирование претензий" },
+          { "p": "По вопросам, связанным с материалом, включая запросы на удаление и претензии о нарушении интеллектуальных прав, обращайтесь на <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> или в личные сообщения <a href='https://t.me/infikot' target='_blank' rel='noopener'>@infikot</a>. Мы рассмотрим обращение и при необходимости удалим материал." },
+          { "h": "9. Официальные документы «MAX»" },
+          { "p": "Актуальные редакции Пользовательского соглашения и Политики конфиденциальности сервиса «MAX» публикуются правообладателем на официальном сайте сервиса. Проект не дублирует и не изменяет эти документы — перед использованием Модификации ознакомьтесь с ними напрямую у правообладателя." }
+        ],
+        "en": [
+          { "h": "1. Legal status and affiliation" },
+          { "p": "like Max is an unofficial modification of the MAX service (the “Modification”), built by the community without the involvement of the rights holder. The project does not represent the rights holder and does not act on their behalf." },
+          { "h": "2. Authorship and monetisation" },
+          { "p": "The Author of the Modification is not affiliated with the rights holder, claims no rights to the original application and does not monetise the product. The project is non-commercial: builds are distributed free of charge." },
+          { "h": "3. Technical implementation and fair use" },
+          { "ul": [
+            "The Modification makes changes exclusively in the client part of the app, without interfering with MAX servers.",
+            "It uses publicly available methods of interacting with the service, similar to the web version; the normal operation of the original service is not disrupted.",
+            "Device data spoofing and telemetry limitation aim to protect user privacy and reduce data collection, not to circumvent security systems."
+          ] },
+          { "note": { "kind": "info", "title": "Note", "text": "Because the service may check the APK signature, some features — Digital ID, for example — may misbehave or be unavailable in the Modification." } },
+          { "h": "4. Relationship with the MAX Terms of Use" },
+          { "p": "Using the Modification violates the current MAX terms of use. The rights holder publishes the current versions of its documents on the official service website; review them yourself before installing." },
+          { "p": "<strong>Ban on reworking.</strong> The MAX terms prohibit reverse engineering, decompiling, disassembling and modifying the application. A modification that changes client functionality falls under this restriction." },
+          { "p": "<strong>Ban on intervention.</strong> The MAX terms prohibit using automated scripts or otherwise influencing service functions without the rights holder's permission." },
+          { "h": "5. Possible consequences for the user" },
+          { "ul": [
+            "Account blocking: the rights holder may suspend, restrict or terminate a user's access to the service and its individual features.",
+            "Restricted functionality: individual app features may become unavailable because of server-side checks."
+          ] },
+          { "h": "6. Author's disclaimer" },
+          { "ul": [
+            "<strong>Acceptance of risk.</strong> By downloading, installing and using the Modification, the user understands and accepts all legal, technical and financial risks associated with violating the MAX terms of use.",
+            "<strong>Security.</strong> The Author does not guarantee the absence of malicious code, errors or other undesirable consequences, and does not collect users' personal data.",
+            "<strong>Liability.</strong> The Author is not liable for any consequences, losses or damages related to the use of the Modification, including account blocking. The Modification is provided as is, without any warranty."
+          ] },
+          { "h": "7. Community rules" },
+          { "p": "Materials are published in the Telegram channel and its threads. Using any unofficial versions, modifications or patches may violate the terms of use of the original applications' rights holders." },
+          { "ul": [
+            "Modifications presented in the channel are unofficial; the channel author claims no rights of the publishers and does not monetise the product.",
+            "Using modifications is entirely at the user's own risk.",
+            "Before using any modification, the user must independently review the rights holder's original documents."
+          ] },
+          { "h": "8. Pre-trial settlement of claims" },
+          { "p": "For anything related to this material — including removal requests and intellectual property claims — write to <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> or send a direct message to <a href='https://t.me/infikot' target='_blank' rel='noopener'>@infikot</a>. The request will be reviewed and the material removed if necessary." },
+          { "h": "9. Official MAX documents" },
+          { "p": "The current versions of the MAX Terms of Use and Privacy Policy are published by the rights holder on the official service website. This project neither duplicates nor modifies those documents — review them directly with the rights holder before using the Modification." }
+        ]
+      }
+    }
+  }
+}

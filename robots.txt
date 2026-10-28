@@ -1,0 +1,5 @@
+# like Max — https://infikot.github.io/like-max/
+User-agent: *
+Allow: /
+
+Sitemap: https://infikot.github.io/like-max/sitemap.xml

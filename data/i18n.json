@@ -1,0 +1,650 @@
+{
+  "ru": {
+    "meta": {
+      "home": {
+        "title": "like Max — неофициальная модификация MAX для Android",
+        "desc": "like Max — неофициальная модификация мессенджера MAX: нечиталка, Ayu-модуль для удалённых сообщений, AMOLED и прозрачные темы, фильтры звонков, блокировка аналитики. Android 9–16, без root."
+      },
+      "kb": {
+        "title": "База знаний — like Max",
+        "desc": "Инструкции по установке like Max, разбор модулей, решение проблем и ответы на частые вопросы о модификации MAX."
+      },
+      "article": {
+        "title": "Статья — База знаний like Max",
+        "desc": "Подробная инструкция из базы знаний like Max."
+      },
+      "tos": {
+        "title": "Пользовательское соглашение — like Max",
+        "desc": "Условия использования неофициальной модификации like Max: лицензия, ограничения, отказ от гарантий, риски блокировки аккаунта MAX."
+      },
+      "pp": {
+        "title": "Политика конфиденциальности — like Max",
+        "desc": "Какие данные обрабатывает like Max, какие разрешения используются и почему проект не собирает персональные данные."
+      },
+      "legal": {
+        "title": "Правовой статус модификации — like Max",
+        "desc": "Правовой статус like Max, соотношение с Пользовательским соглашением MAX, порядок досудебного урегулирования претензий."
+      },
+      "thanks": {
+        "title": "Отдельное спасибо — like Max",
+        "desc": "Люди и площадки, которые помогают like Max: 4PDA, SafeMax, Kometa и поддержавшие проект."
+      }
+    },
+    "a11y": {
+      "skip": "Перейти к содержимому",
+      "menu": "Открыть меню",
+      "close": "Закрыть",
+      "lang": "Язык интерфейса",
+      "mainNav": "Основная навигация",
+      "breadcrumbs": "Навигационная цепочка",
+      "toLight": "Включить светлую тему",
+      "toDark": "Включить тёмную тему",
+      "top": "Наверх",
+      "noscriptTitle": "Для работы сайта нужен JavaScript",
+      "noscript": "Включите JavaScript, чтобы увидеть возможности, историю версий и скачать модификацию. Релизы всегда доступны напрямую:"
+    },
+    "nav": {
+      "home": "Главная",
+      "features": "Возможности",
+      "updates": "Обновления",
+      "kb": "База знаний",
+      "author": "Автор",
+      "thanks": "Спасибо",
+      "legal": "Правовое",
+      "download": "Скачать"
+    },
+    "action": {
+      "download": "Скачать",
+      "downloadApk": "Скачать APK",
+      "kb": "База знаний",
+      "home": "На главную"
+    },
+    "toast": {
+      "themeLight": "Светлая тема включена",
+      "themeDark": "Тёмная тема включена",
+      "download": "Загрузка открыта в новой вкладке"
+    },
+    "hero": {
+      "eyebrow": "Неофициальная модификация MAX",
+      "title": "like Max — <em>максимум</em> от MAX",
+      "lead": "Модификация мессенджера MAX: нечиталка и неписалка, AMOLED и прозрачные темы, Ayu-модуль для удалённых сообщений, фильтры звонков и контроль над тем, что о вас узнаёт сервис.",
+      "noRoot": "Без root и проверок VPN",
+      "actual": "Актуально: v{v}",
+      "statVersion": "Версия мода",
+      "statBase": "База MAX",
+      "statFeatures": "Возможностей"
+    },
+    "notice": {
+      "title": "Обязательно к прочтению",
+      "text": "like Max — неофициальная модификация и не связана с правообладателем сервиса MAX. Установка и использование — на ваш собственный риск: это нарушает Пользовательское соглашение MAX и может привести к ограничению аккаунта.",
+      "linkLegal": "Правовой статус модификации",
+      "linkTos": "Пользовательское соглашение",
+      "linkDomains": "Блок-лист доменов",
+      "badge": "Важно",
+      "crash": "При первом запуске возможен краш — просто перезайдите в приложение. О багах сообщайте @infikot и прикладывайте логи из приложения."
+    },
+    "features": {
+      "eyebrow": "Возможности",
+      "title": "То, чего не хватает в оригинале",
+      "lead": "Каждая функция — отдельный модуль, который можно выключить. Ничего не навязывается: по умолчанию активно только безопасное.",
+      "missingTitle": "Чего нет в оригинале",
+      "missing": [
+        "Архивы чатов: отдельное хранилище, а не только скрытая вкладка",
+        "Полное скрытие тем: темы убираются из интерфейса целиком",
+        "Прозрачные темы: работают на Android 12 и выше"
+      ],
+      "chips": [
+        "Нечиталка",
+        "Неписалка",
+        "SafetyModule",
+        "Ayu Module",
+        "AMOLED",
+        "Прозрачные темы",
+        "Обои для чатов",
+        "Фильтры звонков",
+        "Скрытие папок",
+        "Блокировка трекеров",
+        "Подмена устройства",
+        "Скрытие номера",
+        "Debug-меню",
+        "Без проверок VPN и Root"
+      ],
+      "allTitle": "Полный список возможностей из релиза ({n})",
+      "cards": [
+        {
+          "icon": "shield",
+          "title": "SafetyModule",
+          "text": "Контроль загрузки модулей с защитой от сбоев. Даже если модуль не загрузился, приложение запустится и останется рабочим.",
+          "tag": "Ядро"
+        },
+        {
+          "icon": "eye",
+          "title": "Нечиталка и Неписалка",
+          "text": "Скрытие статуса прочтения, процесса набора текста и отправки файлов — каждый пункт настраивается отдельно.",
+          "tag": "Приватность"
+        },
+        {
+          "icon": "wand",
+          "title": "Ayu Module",
+          "text": "Удалённые собеседником сообщения остаются на устройстве: аккуратная нативная интеграция, локальное хранение и размытие с настраиваемой прозрачностью.",
+          "tag": "Модуль"
+        },
+        {
+          "icon": "wifi",
+          "title": "Блокировка аналитики",
+          "text": "Большинство доменов аналитики, трекеров и сбора статистики отсекается на уровне сетевых запросов. Актуальный блок-лист публикуется отдельно.",
+          "tag": "Сеть"
+        },
+        {
+          "icon": "refresh",
+          "title": "Подмена данных устройства",
+          "text": "Производитель, модель, отпечаток и другие параметры устройства — свои значения. Полезно, чтобы не светить реальное железо.",
+          "tag": "Приватность"
+        },
+        {
+          "icon": "image",
+          "title": "Обои для чатов",
+          "text": "Свои фоны для чатов: изображения, GIF и видео. Отдельный предпросмотр, чтобы подобрать то, что нужно.",
+          "tag": "Внешний вид"
+        },
+        {
+          "icon": "palette",
+          "title": "AMOLED и прозрачные темы",
+          "text": "Глубокая чёрная тема для OLED-экранов, прозрачный интерфейс и нативная Monet-окраска системы.",
+          "tag": "Внешний вид"
+        },
+        {
+          "icon": "phone",
+          "title": "Фильтры звонков",
+          "text": "Белый список входящих вызовов, скрытие статуса микрофона и гео звонка: IP, страна и город.",
+          "tag": "Звонки"
+        },
+        {
+          "icon": "folder",
+          "title": "Скрытие папок и вкладок",
+          "text": "Уберите лишнее из интерфейса: например, вкладку со всеми чатами или архив. С настройкой фона закрепов.",
+          "tag": "Интерфейс"
+        },
+        {
+          "icon": "user",
+          "title": "Скрытие номера телефона",
+          "text": "Номер не показывается в профиле, а при необходимости его можно открыть или скопировать одним касанием. Модуль можно выключить.",
+          "tag": "Приватность"
+        },
+        {
+          "icon": "camera",
+          "title": "Скриншоты и инструменты",
+          "text": "Создание скриншотов в любом экране, инсайдерское меню с путями и запросами приложения, быстрый доступ в magic-room и логи до 150 строк.",
+          "tag": "Инструменты"
+        },
+        {
+          "icon": "sparkles",
+          "title": "Персонализация",
+          "text": "Иконка и название приложения, кастомное нижнее меню, покраска текста сообщения и локализация интерфейса — включая английский.",
+          "tag": "Внешний вид"
+        }
+      ]
+    },
+    "updates": {
+      "eyebrow": "История обновлений",
+      "title": "Каждая версия — с переносом на свежий MAX",
+      "lead": "История релизов и изменений модификации. Полные сборки и подписи — в GitHub Releases.",
+      "note": "Полные логи изменений ведутся только для актуальной версии — старые записи сокращены.",
+      "allOnGithub": "Релизы на GitHub",
+      "latest": "Актуальная",
+      "base": "База",
+      "kindMajor": "крупное",
+      "kindMinor": "обновление",
+      "kindHotfix": "хотфикс",
+      "showAll": "Показать все {n} версий",
+      "hideAll": "Свернуть список"
+    },
+    "faq": {
+      "eyebrow": "Коротко о главном",
+      "title": "Частые вопросы",
+      "lead": "Самое спрашиваемое в чате — собрано здесь. Подробности — в базе знаний.",
+      "items": [
+        {
+          "q": "Почему приложение падает при первом запуске?",
+          "a": "Первый старт после установки или обновления может завершиться крашем — это известное поведение модификации. Просто откройте приложение снова: дальше оно работает штатно."
+        },
+        {
+          "q": "Нужны ли root-права или VPN?",
+          "a": "Нет. like Max ставится как обычный APK, а проверки на root-права и активный VPN из приложения убраны."
+        },
+        {
+          "q": "Можно ли войти в свой аккаунт MAX?",
+          "a": "Да, используется ваш обычный аккаунт. При первом входе советую подключиться через мобильный интернет, а модуль подмены устройства держать выключенным."
+        },
+        {
+          "q": "Можно ли поставить модификацию поверх оригинального MAX?",
+          "a": "Нет. Это два разных приложения с разными подписями — установка поверх не сработает, а данные из оригинала не переносятся. Ставьте like Max отдельно."
+        },
+        {
+          "q": "Модификация отправляет мои данные автору?",
+          "a": "Нет. У проекта нет собственных серверов и аналитики: аккаунт, сообщения и настройки остаются на устройстве и на серверах MAX."
+        },
+        {
+          "q": "Что будет, если аккаунт заблокируют?",
+          "a": "Использование модификации нарушает соглашение MAX, поэтому такой риск существует и принимается пользователем. Автор не несёт ответственности за последствия — подробности в правовом разделе."
+        }
+      ]
+    },
+    "kb": {
+      "eyebrow": "База знаний",
+      "title": "Ответы на всё про like Max",
+      "lead": "Инструкции, разборы модулей и решение проблем — от установки APK до фильтров звонков и входа в аккаунт.",
+      "openAll": "Все статьи",
+      "searchPlaceholder": "Поиск по базе знаний",
+      "readTime": "{n} мин чтения",
+      "noResults": "Ничего не найдено. Попробуйте другой запрос или напишите в чат сообщества."
+    },
+    "article": {
+      "updated": "Обновлено",
+      "toc": "На этой странице",
+      "back": "К базе знаний",
+      "ask": "Задать вопрос в чате",
+      "related": "Читайте также",
+      "notFoundTitle": "Статья не найдена",
+      "notFoundText": "Проверьте ссылку или вернитесь в базу знаний — там собраны все материалы."
+    },
+    "author": {
+      "eyebrow": "Команда",
+      "title": "Кто всё это делает",
+      "lead": "like Max развивает один человек вместе с сообществом: сборки тестируют в чате, идеи и баг-репорты приходят оттуда же.",
+      "role": "Разработчик модификации",
+      "bio": "Автор like Max. Официальные сборки публикуются только в Telegram-канале и в GitHub Releases — любые другие источники не гарантируют целостность APK.",
+      "channel": "Telegram-канал",
+      "channelDesc": "Релизы, анонсы и блок-лист доменов",
+      "chat": "Чат сообщества",
+      "chatDesc": "Помощь и обсуждение функций. Баги — в @infikot с логами",
+      "github": "GitHub",
+      "githubDesc": "Исходники сайта и релизы",
+      "email": "Электронная почта",
+      "emailDesc": "Досудебные претензии и правовые запросы"
+    },
+    "download": {
+      "eyebrow": "Загрузка",
+      "title": "Скачать like Max",
+      "lead": "APK загружается с GitHub Releases — это основной источник. Зеркало в Telegram пригодится, если GitHub недоступен.",
+      "primary": "Скачать APK",
+      "mirror": "Зеркало в Telegram",
+      "note": "Перед загрузкой нужно принять условия использования. Устанавливайте APK только из источников, указанных на этой странице.",
+      "reqAndroid": "Android",
+      "reqBase": "База MAX",
+      "reqRoot": "Root-права",
+      "reqRootNo": "не нужны",
+      "reqNet": "Интернет",
+      "reqNetYes": "нужен для входа"
+    },
+    "footer": {
+      "about": "Неофициальная модификация мессенджера MAX: приватность, темы, локальные модули и удобство. Проект не связан с ООО «Коммуникационная платформа».",
+      "colProduct": "Продукт",
+      "colProject": "Проект",
+      "colLegal": "Документы",
+      "github": "GitHub",
+      "releases": "Релизы",
+      "channel": "Telegram-канал",
+      "community": "Чат сообщества",
+      "disclaimer": "© {year} like Max. Неофициальная модификация MAX. MAX — обозначение сервиса, права на который принадлежат правообладателю; проект не аффилирован с ним и не монетизируется.",
+      "madeBy": "автор проекта"
+    },
+    "legal": {
+      "eyebrow": "Правовая информация",
+      "revision": "Дата редакции",
+      "tosTitle": "Пользовательское соглашение",
+      "ppTitle": "Политика конфиденциальности",
+      "legalTitle": "Правовой статус"
+    },
+    "thanks": {
+      "eyebrow": "Благодарности",
+      "title": "Отдельное спасибо",
+      "lead": "Сайт и мод живут благодаря сообществу: тестам, баг-репортам и площадкам, которые помогают распространять сборки. Здесь — место для благодарностей; часть ссылок появится позже.",
+      "items": [
+        { "icon": "globe", "title": "4PDA", "text": "Тема мода на крупнейшем профильном форуме. Ссылка на тему появится здесь позже.", "tag": "скоро" },
+        { "icon": "shield", "title": "SafeMax", "text": "Проверка сборок на безопасность и чистоту APK. Контакты и ссылка — позже.", "tag": "скоро" },
+        { "icon": "layers", "title": "Kometa", "text": "Дополнительное зеркало загрузок и помощь с установкой. Реквизиты появятся позже.", "tag": "скоро" },
+        { "icon": "heart", "title": "Донатеры", "text": "Те, кто поддержал проект деньгами, тестами или идеями. Имена появятся после согласования.", "tag": "скоро" }
+      ],
+      "donorsTitle": "Поддержать проект",
+      "donorsText": "Реквизиты для донатов и список поддержавших появятся позже. Уже сейчас помочь можно тестами, баг-репортами в @infikot и распространением официальных сборок."
+    },
+    "modal": {
+      "title": "Условия использования",
+      "intro": "Перед загрузкой подтвердите, что понимаете риски:",
+      "points": [
+        "Модификация неофициальная и нарушает Пользовательское соглашение MAX — аккаунт может быть ограничен или заблокирован.",
+        "Устанавливая APK, вы принимаете юридические и технические риски на себя.",
+        "Программа предоставляется «как есть», без гарантий; автор не отвечает за последствия использования.",
+        "Собственных серверов и аналитики у проекта нет: обработка данных остаётся на устройстве."
+      ],
+      "more": "Полные тексты документов:",
+      "accept": "Принять и скачать",
+      "decline": "Отклонить"
+    }
+  },
+  "en": {
+    "meta": {
+      "home": {
+        "title": "like Max — unofficial MAX modification for Android",
+        "desc": "like Max is an unofficial modification of the MAX messenger: read-receipt and typing concealment, an Ayu module for deleted messages, AMOLED and transparent themes, call filters and tracker blocking. Android 9–16, no root."
+      },
+      "kb": {
+        "title": "Knowledge base — like Max",
+        "desc": "How to install like Max, what each module does, troubleshooting and answers to common questions about the MAX modification."
+      },
+      "article": {
+        "title": "Article — like Max knowledge base",
+        "desc": "An in-depth guide from the like Max knowledge base."
+      },
+      "tos": {
+        "title": "Terms of use — like Max",
+        "desc": "Terms of use for the unofficial like Max modification: licence, restrictions, warranty disclaimer and the risks of a MAX account restriction."
+      },
+      "pp": {
+        "title": "Privacy policy — like Max",
+        "desc": "What data like Max processes, which permissions it uses and why the project collects no personal data."
+      },
+      "legal": {
+        "title": "Legal status of the modification — like Max",
+        "desc": "Legal status of like Max, how it relates to the MAX terms of use, and how to file a pre-trial claim."
+      },
+      "thanks": {
+        "title": "Special thanks — like Max",
+        "desc": "The people and platforms that help like Max: 4PDA, SafeMax, Kometa and the project's supporters."
+      }
+    },
+    "a11y": {
+      "skip": "Skip to content",
+      "menu": "Open menu",
+      "close": "Close",
+      "lang": "Interface language",
+      "mainNav": "Main navigation",
+      "breadcrumbs": "Breadcrumbs",
+      "toLight": "Switch to light theme",
+      "toDark": "Switch to dark theme",
+      "top": "Back to top",
+      "noscriptTitle": "This site needs JavaScript",
+      "noscript": "Enable JavaScript to see the features, the release history and the download options. Releases are always available directly:"
+    },
+    "nav": {
+      "home": "Home",
+      "features": "Features",
+      "updates": "Updates",
+      "kb": "Knowledge base",
+      "author": "Author",
+      "thanks": "Thanks",
+      "legal": "Legal",
+      "download": "Download"
+    },
+    "action": {
+      "download": "Download",
+      "downloadApk": "Download APK",
+      "kb": "Knowledge base",
+      "home": "Back home"
+    },
+    "toast": {
+      "themeLight": "Light theme enabled",
+      "themeDark": "Dark theme enabled",
+      "download": "Download opened in a new tab"
+    },
+    "hero": {
+      "eyebrow": "Unofficial MAX modification",
+      "title": "like Max — the <em>most</em> out of MAX",
+      "lead": "A modification of the MAX messenger: read-receipt and typing concealment, AMOLED and transparent themes, an Ayu module that keeps deleted messages, call filters, and control over what the service learns about you.",
+      "noRoot": "No root, no VPN checks",
+      "actual": "Current: v{v}",
+      "statVersion": "Mod version",
+      "statBase": "MAX base",
+      "statFeatures": "Features"
+    },
+    "notice": {
+      "title": "Must read",
+      "text": "like Max is an unofficial modification and is not affiliated with the owner of the MAX service. Installing and using it is entirely at your own risk: it violates the MAX terms of use and may result in your account being restricted.",
+      "linkLegal": "Legal status",
+      "linkTos": "Terms of use",
+      "linkDomains": "Domain block list",
+      "badge": "Important",
+      "crash": "The very first launch may crash — just open the app again. Report bugs to @infikot and attach the in-app logs."
+    },
+    "features": {
+      "eyebrow": "Features",
+      "title": "What the original is missing",
+      "lead": "Every feature is a separate module you can switch off. Nothing is forced — only the safe modules are on by default.",
+      "missingTitle": "What the original is missing",
+      "missing": [
+        "Chat archives: a real archive store, not just a hidden tab",
+        "Full theme hiding: themes can be removed from the interface entirely",
+        "Transparent themes: available on Android 12 and newer"
+      ],
+      "chips": [
+        "No read receipts",
+        "No typing status",
+        "SafetyModule",
+        "Ayu Module",
+        "AMOLED",
+        "Transparent themes",
+        "Chat wallpapers",
+        "Call filters",
+        "Folder hiding",
+        "Tracker blocking",
+        "Device spoofing",
+        "Phone number hidden",
+        "Debug menu",
+        "No VPN/Root checks"
+      ],
+      "allTitle": "Every feature in the current release ({n})",
+      "cards": [
+        {
+          "icon": "shield",
+          "title": "SafetyModule",
+          "text": "Module loading is supervised with crash protection. Even if a module fails to load, the app still starts and stays usable.",
+          "tag": "Core"
+        },
+        {
+          "icon": "eye",
+          "title": "Invisible reading & typing",
+          "text": "Hide your read status, the typing indicator and file-sending events — each one has its own switch.",
+          "tag": "Privacy"
+        },
+        {
+          "icon": "wand",
+          "title": "Ayu Module",
+          "text": "Messages deleted by the other side stay on your device: a native-looking integration, local storage and blur with adjustable transparency.",
+          "tag": "Module"
+        },
+        {
+          "icon": "wifi",
+          "title": "Analytics blocking",
+          "text": "Most analytics, tracker and telemetry domains are cut off at the network level. The block list is published separately and updated regularly.",
+          "tag": "Network"
+        },
+        {
+          "icon": "refresh",
+          "title": "Device data spoofing",
+          "text": "Manufacturer, model, fingerprint and other device parameters become yours to set — so your real hardware is not exposed.",
+          "tag": "Privacy"
+        },
+        {
+          "icon": "image",
+          "title": "Chat wallpapers",
+          "text": "Custom chat backgrounds: images, GIFs and video, with a dedicated preview so you can pick the right one.",
+          "tag": "Look & feel"
+        },
+        {
+          "icon": "palette",
+          "title": "AMOLED & transparent themes",
+          "text": "A deep black theme for OLED panels, a transparent interface and native Monet system colouring.",
+          "tag": "Look & feel"
+        },
+        {
+          "icon": "phone",
+          "title": "Call filters",
+          "text": "A whitelist for incoming calls, hidden microphone status and call geolocation: IP, country and city.",
+          "tag": "Calls"
+        },
+        {
+          "icon": "folder",
+          "title": "Folder & tab hiding",
+          "text": "Remove clutter from the interface — for example the all-chats tab or the archive. Includes pin background options.",
+          "tag": "Interface"
+        },
+        {
+          "icon": "user",
+          "title": "Phone number hidden",
+          "text": "Your number is not shown in the profile, yet a single tap reveals or copies it. The module can be disabled at any time.",
+          "tag": "Privacy"
+        },
+        {
+          "icon": "camera",
+          "title": "Screenshots & tools",
+          "text": "Screenshots on every screen, an insider menu with the paths and requests the app uses, quick access to magic-room and up to 150 lines of in-app logs.",
+          "tag": "Tools"
+        },
+        {
+          "icon": "sparkles",
+          "title": "Personalisation",
+          "text": "App icon and name, a custom bottom menu, coloured message text and interface localisation — English included.",
+          "tag": "Look & feel"
+        }
+      ]
+    },
+    "updates": {
+      "eyebrow": "Release history",
+      "title": "Every version ships on a fresh MAX base",
+      "lead": "The full release and changelog history. Signed builds live in GitHub Releases.",
+      "note": "Full changelogs are kept only for the current version; older entries are condensed.",
+      "allOnGithub": "Releases on GitHub",
+      "latest": "Latest",
+      "base": "Base",
+      "kindMajor": "major",
+      "kindMinor": "update",
+      "kindHotfix": "hotfix",
+      "showAll": "Show all {n} versions",
+      "hideAll": "Collapse the list"
+    },
+    "faq": {
+      "eyebrow": "The essentials",
+      "title": "Frequently asked questions",
+      "lead": "The questions we get most often in the chat. Deeper detail lives in the knowledge base.",
+      "items": [
+        {
+          "q": "Why does the app crash on the first launch?",
+          "a": "The first start after installing or updating may end in a crash — this is known behaviour. Simply open the app again; from then on it works normally."
+        },
+        {
+          "q": "Do I need root or a VPN?",
+          "a": "No. like Max installs as a regular APK, and the root and active-VPN checks were removed from the app."
+        },
+        {
+          "q": "Can I sign in with my MAX account?",
+          "a": "Yes — your regular account is used. For the first sign-in I recommend mobile data and keeping the device-spoofing module switched off."
+        },
+        {
+          "q": "Can I install it over the original MAX?",
+          "a": "No. They are two different apps with different signatures, so installing over the original will not work, and data is not transferred. Install like Max separately."
+        },
+        {
+          "q": "Does the modification send my data to the author?",
+          "a": "No. The project has no servers and no analytics of its own: your account, messages and settings stay on your device and on MAX servers."
+        },
+        {
+          "q": "What happens if my account gets blocked?",
+          "a": "Using the modification violates the MAX terms, so the risk exists and is accepted by the user. The author is not liable for the consequences — see the legal section for details."
+        }
+      ]
+    },
+    "kb": {
+      "eyebrow": "Knowledge base",
+      "title": "Everything about like Max, answered",
+      "lead": "Instructions, module breakdowns and troubleshooting — from installing the APK to call filters and signing in.",
+      "openAll": "All articles",
+      "searchPlaceholder": "Search the knowledge base",
+      "readTime": "{n} min read",
+      "noResults": "Nothing found. Try another query or ask in the community chat."
+    },
+    "article": {
+      "updated": "Updated",
+      "toc": "On this page",
+      "back": "Back to the knowledge base",
+      "ask": "Ask in the chat",
+      "related": "Read next",
+      "notFoundTitle": "Article not found",
+      "notFoundText": "Check the link or go back to the knowledge base — all materials are collected there."
+    },
+    "author": {
+      "eyebrow": "Team",
+      "title": "Who builds this",
+      "lead": "like Max is built by one person together with the community: builds are tested in the chat, and ideas and bug reports come from there too.",
+      "role": "Modification developer",
+      "bio": "Author of like Max. Official builds are published only in the Telegram channel and in GitHub Releases — any other source cannot guarantee the integrity of the APK.",
+      "channel": "Telegram channel",
+      "channelDesc": "Releases, announcements and the domain block list",
+      "chat": "Community chat",
+      "chatDesc": "Help and feature discussion. Bugs — to @infikot with logs",
+      "github": "GitHub",
+      "githubDesc": "Site source code and releases",
+      "email": "Email",
+      "emailDesc": "Pre-trial claims and legal requests"
+    },
+    "download": {
+      "eyebrow": "Download",
+      "title": "Get like Max",
+      "lead": "The APK comes from GitHub Releases — that is the primary source. The Telegram mirror helps if GitHub is unavailable.",
+      "primary": "Download APK",
+      "mirror": "Telegram mirror",
+      "note": "You need to accept the terms of use before downloading. Install APKs only from the sources listed on this page.",
+      "reqAndroid": "Android",
+      "reqBase": "MAX base",
+      "reqRoot": "Root access",
+      "reqRootNo": "not required",
+      "reqNet": "Internet",
+      "reqNetYes": "required to sign in"
+    },
+    "footer": {
+      "about": "An unofficial modification of the MAX messenger: privacy, themes, on-device modules and convenience. The project is not affiliated with the owner of the MAX service.",
+      "colProduct": "Product",
+      "colProject": "Project",
+      "colLegal": "Documents",
+      "github": "GitHub",
+      "releases": "Releases",
+      "channel": "Telegram channel",
+      "community": "Community chat",
+      "disclaimer": "© {year} like Max. Unofficial MAX modification. MAX is the name of a service owned by its rights holder; this project is not affiliated with them and is not monetised.",
+      "madeBy": "project author"
+    },
+    "legal": {
+      "eyebrow": "Legal information",
+      "revision": "Revision date",
+      "tosTitle": "Terms of use",
+      "ppTitle": "Privacy policy",
+      "legalTitle": "Legal status"
+    },
+    "thanks": {
+      "eyebrow": "Credits",
+      "title": "Special thanks",
+      "lead": "The site and the mod live thanks to the community: testing, bug reports and the platforms that help distribute builds. This page is for credits; some links will appear later.",
+      "items": [
+        { "icon": "globe", "title": "4PDA", "text": "The mod's thread on the largest Russian Android forum. The link will appear here later.", "tag": "soon" },
+        { "icon": "shield", "title": "SafeMax", "text": "Build safety checks and clean-APK verification. Contacts and a link are coming later.", "tag": "soon" },
+        { "icon": "layers", "title": "Kometa", "text": "An extra download mirror and install help. Details will appear later.", "tag": "soon" },
+        { "icon": "heart", "title": "Donors", "text": "Everyone who supported the project with money, testing or ideas. Names will appear after approval.", "tag": "soon" }
+      ],
+      "donorsTitle": "Support the project",
+      "donorsText": "Donation details and the list of supporters will appear later. Even now you can help with testing, bug reports to @infikot and sharing official builds."
+    },
+    "modal": {
+      "title": "Terms of use",
+      "intro": "Before downloading, confirm that you understand the risks:",
+      "points": [
+        "This modification is unofficial and violates the MAX terms of use — your account may be restricted or blocked.",
+        "By installing the APK you accept the legal and technical risks yourself.",
+        "The software is provided as is, without warranty; the author is not liable for the consequences of using it.",
+        "The project has no servers or analytics of its own: all data processing stays on your device."
+      ],
+      "more": "Full document texts:",
+      "accept": "Accept and download",
+      "decline": "Decline"
+    }
+  }
+}

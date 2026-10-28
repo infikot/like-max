@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Страница не найдена — like Max</title>
+  <meta name="description" content="Страница не найдена. Вернитесь на главную like Max или откройте релизы на GitHub.">
+  <meta name="theme-color" content="#0f1115">
+  <meta name="color-scheme" content="dark light">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="https://infikot.github.io/like-max/assets/img/icon.webp" type="image/webp">
+  <link rel="apple-touch-icon" href="https://infikot.github.io/like-max/assets/img/icon.webp">
+  <!-- Deliberately self-contained: GitHub Pages serves this file for URLs at any depth,
+       so no relative asset paths are used here. Absolute links are intentional. -->
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #121112; --surface: #1a191a; --line: #2c2a2b;
+      --text: #f2f0ee; --muted: #a19e9a; --accent: #f0703a; --amber: #f0a828;
+      --radius: 18px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { color-scheme: light; --bg: #faf9f7; --surface: #fff; --line: #e6e2dd; --text: #191817; --muted: #6d6963; --accent: #d8571f; --amber: #a5701a; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100svh; display: grid; place-items: center; padding: 24px;
+      background: radial-gradient(60% 50% at 50% 0%, color-mix(in oklab, var(--amber) 12%, transparent), transparent 70%), var(--bg);
+      color: var(--text);
+      font-family: Onest, "Segoe UI", system-ui, -apple-system, sans-serif;
+      line-height: 1.55;
+    }
+    .card {
+      max-width: 620px; width: 100%; padding: clamp(24px, 5vw, 44px);
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: 0 30px 60px -30px rgb(0 0 0 / 60%);
+    }
+    .code {
+      display: inline-flex; align-items: center; gap: 8px; margin: 0 0 18px;
+      padding: 6px 14px; border-radius: 999px; font-weight: 700; letter-spacing: .06em;
+      font-size: 13px; color: var(--amber); background: color-mix(in oklab, var(--amber) 14%, transparent);
+      border: 1px solid color-mix(in oklab, var(--amber) 30%, transparent);
+    }
+    h1 { margin: 0 0 12px; font-size: clamp(26px, 5vw, 36px); line-height: 1.15; letter-spacing: -0.02em; }
+    p { margin: 0 0 10px; color: var(--muted); }
+    p:last-of-type { margin-bottom: 26px; }
+    .en { font-size: 14px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    a {
+      display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px;
+      font-weight: 600; text-decoration: none; border: 1px solid var(--line); color: var(--text);
+    }
+    a.primary { background: linear-gradient(135deg, var(--accent), var(--amber)); border-color: transparent; color: #14110f; }
+    a:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+    svg { width: 18px; height: 18px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="code">404 · NOT FOUND</span>
+    <h1>Страница не найдена</h1>
+    <p>Возможно, ссылка устарела или в адресе опечатка. Вернитесь на главную или откройте список релизов.</p>
+    <p class="en">This page does not exist. Head back to the home page or open the release list.</p>
+    <div class="actions">
+      <a class="primary" href="https://infikot.github.io/like-max/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/></svg>
+        На главную
+      </a>
+      <a href="https://github.com/infikot/like-max/releases">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
+        GitHub Releases
+      </a>
+    </div>
+  </div>
+</body>
+</html>
