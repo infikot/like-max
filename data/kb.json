@@ -1,9 +1,40 @@
 {
   "categories": [
-    { "id": "start", "name": { "ru": "Начало", "en": "Getting started" } },
-    { "id": "install", "name": { "ru": "Установка", "en": "Installation" } },
-    { "id": "features", "name": { "ru": "Возможности", "en": "Features" } },
-    { "id": "community", "name": { "ru": "Сообщество", "en": "Community" } }
+    {
+      "id": "start",
+      "name": {
+        "ru": "Начало",
+        "en": "Getting started"
+      }
+    },
+    {
+      "id": "install",
+      "name": {
+        "ru": "Установка",
+        "en": "Installation"
+      }
+    },
+    {
+      "id": "features",
+      "name": {
+        "ru": "Возможности",
+        "en": "Features"
+      }
+    },
+    {
+      "id": "project",
+      "name": {
+        "ru": "Проект",
+        "en": "Project"
+      }
+    },
+    {
+      "id": "community",
+      "name": {
+        "ru": "Сообщество",
+        "en": "Community"
+      }
+    }
   ],
   "articles": [
     {
@@ -12,41 +43,84 @@
       "popular": true,
       "readTime": 4,
       "updated": "2026-10-24",
-      "title": { "ru": "Введение: что такое like Max", "en": "Introduction: what like Max is" },
+      "title": {
+        "ru": "Введение: что такое like Max",
+        "en": "Introduction: what like Max is"
+      },
       "excerpt": {
         "ru": "Коротко о том, чем модификация отличается от оригинального MAX, какие модули внутри и как всё устроено.",
         "en": "A short tour of what the modification adds, which modules are inside and how it all works."
       },
       "body": {
         "ru": [
-          { "p": "like Max — неофициальная модификация приложения MAX для Android. Она ставится как отдельное приложение и не заменяет оригинальный MAX: свой APK, своя подпись, своя иконка. Вы получаете тот же мессенджер, но с набором функций и настроек, которых нет в оригинале." },
-          { "h": "Что внутри" },
-          { "ul": [
-            "<strong>Приватность:</strong> нечиталка и неписалка, скрытие статуса присутствия, блокировка аналитики и трекеров, подмена данных устройства, скрытие номера телефона.",
-            "<strong>Внешний вид:</strong> AMOLED и прозрачные темы, обои для чатов (изображения, GIF, видео), смена иконки, кастомное нижнее меню.",
-            "<strong>Модули:</strong> Ayu — локальное хранение удалённых сообщений, SafetyModule — защита загрузки модулей, фильтры и белый список звонков.",
-            "<strong>Инструменты:</strong> скриншоты на любых экранах, меню разработчика (magic-room), открытие чата по ID, просмотр логов."
-          ] },
-          { "h": "Как это устроено технически" },
-          { "p": "Все изменения находятся в клиентской части приложения: серверы MAX не затрагиваются, технические средства защиты не обходятся. Модули работают локально, и каждый можно отключить по отдельности." },
-          { "note": { "kind": "info", "title": "Важно", "text": "Модификация неофициальная и нарушает Пользовательское соглашение MAX. Перед установкой прочитайте <a href='../legal'>правовой статус модификации</a>." } },
-          { "h": "Куда идти дальше" },
-          { "p": "Начните с <a href='article?slug=install'>установки</a>, затем загляните в разбор <a href='article?slug=privacy'>модулей приватности</a>. Если что-то пошло не так — смотрите <a href='article?slug=crash'>решение проблем</a>." }
+          {
+            "p": "like Max — неофициальная модификация приложения MAX для Android. Она ставится как отдельное приложение и не заменяет оригинальный MAX: свой APK, своя подпись, своя иконка. Вы получаете тот же мессенджер, но с набором функций и настроек, которых нет в оригинале."
+          },
+          {
+            "h": "Что внутри"
+          },
+          {
+            "ul": [
+              "<strong>Приватность:</strong> нечиталка и неписалка, скрытие статуса присутствия, блокировка аналитики и трекеров, подмена данных устройства, скрытие номера телефона.",
+              "<strong>Внешний вид:</strong> AMOLED и прозрачные темы, обои для чатов (изображения, GIF, видео), смена иконки, кастомное нижнее меню.",
+              "<strong>Модули:</strong> Ayu — локальное хранение удалённых сообщений, SafetyModule — защита загрузки модулей, фильтры и белый список звонков.",
+              "<strong>Инструменты:</strong> скриншоты на любых экранах, меню разработчика (magic-room), открытие чата по ID, просмотр логов."
+            ]
+          },
+          {
+            "h": "Как это устроено технически"
+          },
+          {
+            "p": "Все изменения находятся в клиентской части приложения: серверы MAX не затрагиваются, технические средства защиты не обходятся. Модули работают локально, и каждый можно отключить по отдельности."
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Важно",
+              "text": "Модификация неофициальная и нарушает Пользовательское соглашение MAX. Перед установкой прочитайте <a href='../legal'>правовой статус модификации</a>."
+            }
+          },
+          {
+            "h": "Куда идти дальше"
+          },
+          {
+            "p": "Начните с <a href='article?slug=install'>установки</a>, затем загляните в разбор <a href='article?slug=privacy'>модулей приватности</a>. Если что-то пошло не так — смотрите <a href='article?slug=crash'>решение проблем</a>."
+          }
         ],
         "en": [
-          { "p": "like Max is an unofficial modification of the MAX app for Android. It installs as a separate application and does not replace the original MAX: its own APK, its own signature, its own icon. You get the same messenger with a set of extra features and settings the original does not have." },
-          { "h": "What is inside" },
-          { "ul": [
-            "<strong>Privacy:</strong> invisible reading and typing, presence concealment, analytics and tracker blocking, device data spoofing, hidden phone number.",
-            "<strong>Look &amp; feel:</strong> AMOLED and transparent themes, chat wallpapers (images, GIFs, video), icon swapping, a custom bottom menu.",
-            "<strong>Modules:</strong> Ayu — on-device storage for deleted messages, SafetyModule — crash-safe module loading, call filters and a whitelist.",
-            "<strong>Tools:</strong> screenshots on every screen, a developer menu (magic-room), opening a chat by ID, and log viewing."
-          ] },
-          { "h": "How it works technically" },
-          { "p": "All changes live in the client part of the app: MAX servers are untouched and no technical protection measures are bypassed. Modules run locally and each one can be switched off independently." },
-          { "note": { "kind": "info", "title": "Important", "text": "The modification is unofficial and violates the MAX terms of use. Read the <a href='../legal'>legal status</a> before installing." } },
-          { "h": "Where to go next" },
-          { "p": "Start with <a href='article?slug=install'>installation</a>, then take a look at the <a href='article?slug=privacy'>privacy modules</a>. If something went wrong, see <a href='article?slug=crash'>troubleshooting</a>." }
+          {
+            "p": "like Max is an unofficial modification of the MAX app for Android. It installs as a separate application and does not replace the original MAX: its own APK, its own signature, its own icon. You get the same messenger with a set of extra features and settings the original does not have."
+          },
+          {
+            "h": "What is inside"
+          },
+          {
+            "ul": [
+              "<strong>Privacy:</strong> invisible reading and typing, presence concealment, analytics and tracker blocking, device data spoofing, hidden phone number.",
+              "<strong>Look &amp; feel:</strong> AMOLED and transparent themes, chat wallpapers (images, GIFs, video), icon swapping, a custom bottom menu.",
+              "<strong>Modules:</strong> Ayu — on-device storage for deleted messages, SafetyModule — crash-safe module loading, call filters and a whitelist.",
+              "<strong>Tools:</strong> screenshots on every screen, a developer menu (magic-room), opening a chat by ID, and log viewing."
+            ]
+          },
+          {
+            "h": "How it works technically"
+          },
+          {
+            "p": "All changes live in the client part of the app: MAX servers are untouched and no technical protection measures are bypassed. Modules run locally and each one can be switched off independently."
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Important",
+              "text": "The modification is unofficial and violates the MAX terms of use. Read the <a href='../legal'>legal status</a> before installing."
+            }
+          },
+          {
+            "h": "Where to go next"
+          },
+          {
+            "p": "Start with <a href='article?slug=install'>installation</a>, then take a look at the <a href='article?slug=privacy'>privacy modules</a>. If something went wrong, see <a href='article?slug=crash'>troubleshooting</a>."
+          }
         ]
       }
     },
@@ -56,39 +130,78 @@
       "popular": false,
       "readTime": 3,
       "updated": "2026-10-24",
-      "title": { "ru": "Правовой статус и риски", "en": "Legal status and risks" },
+      "title": {
+        "ru": "Правовой статус и риски",
+        "en": "Legal status and risks"
+      },
       "excerpt": {
         "ru": "Что говорит соглашение MAX, чем рискует пользователь и как связаться с автором по правовым вопросам.",
         "en": "What the MAX terms say, what the user risks, and how to reach the author about legal matters."
       },
       "body": {
         "ru": [
-          { "h": "Правовой статус" },
-          { "p": "like Max не связан с правообладателем сервиса MAX и создан без его ведома. Автор не претендует на права на оригинальное приложение, не использует проект для монетизации и не обходит технические средства защиты сервиса." },
-          { "h": "Что это значит для вас" },
-          { "ul": [
-            "Использование модификации нарушает Пользовательское соглашение MAX — в частности запрет на изменение приложения и внешнее вмешательство в работу сервиса.",
-            "Правообладатель вправе приостановить или прекратить доступ к сервису, включая блокировку аккаунта.",
-            "Юридические, технические и финансовые риски пользователь принимает на себя.",
-            "Модификация предоставляется «как есть», без каких-либо гарантий."
-          ] },
-          { "note": { "kind": "warn", "title": "Обратите внимание", "text": "Автор не несёт ответственности за последствия использования, включая блокировку аккаунта. Полные тексты — в разделе <a href='../legal'>правовой информации</a>." } },
-          { "h": "Досудебное урегулирование" },
-          { "p": "По вопросам, связанным с материалом, включая запросы на удаление и претензии по интеллектуальным правам, пишите на <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> или в личные сообщения <a href='https://t.me/infikot'>@infikot</a>." }
+          {
+            "h": "Правовой статус"
+          },
+          {
+            "p": "like Max не связан с правообладателем сервиса MAX и создан без его ведома. Автор не претендует на права на оригинальное приложение, не использует проект для монетизации и не обходит технические средства защиты сервиса."
+          },
+          {
+            "h": "Что это значит для вас"
+          },
+          {
+            "ul": [
+              "Использование модификации нарушает Пользовательское соглашение MAX — в частности запрет на изменение приложения и внешнее вмешательство в работу сервиса.",
+              "Правообладатель вправе приостановить или прекратить доступ к сервису, включая блокировку аккаунта.",
+              "Юридические, технические и финансовые риски пользователь принимает на себя.",
+              "Модификация предоставляется «как есть», без каких-либо гарантий."
+            ]
+          },
+          {
+            "note": {
+              "kind": "warn",
+              "title": "Обратите внимание",
+              "text": "Автор не несёт ответственности за последствия использования, включая блокировку аккаунта. Полные тексты — в разделе <a href='../legal'>правовой информации</a>."
+            }
+          },
+          {
+            "h": "Досудебное урегулирование"
+          },
+          {
+            "p": "По вопросам, связанным с материалом, включая запросы на удаление и претензии по интеллектуальным правам, пишите на <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> или в личные сообщения <a href='https://t.me/infikot'>@infikot</a>."
+          }
         ],
         "en": [
-          { "h": "Legal status" },
-          { "p": "like Max is not affiliated with the owner of the MAX service and was created without their knowledge. The author claims no rights over the original application, does not monetise the project and does not bypass the service's technical protection measures." },
-          { "h": "What that means for you" },
-          { "ul": [
-            "Using the modification violates the MAX terms of use — in particular the ban on modifying the app and intervening in the service from outside.",
-            "The rights holder may suspend or terminate access to the service, including blocking an account.",
-            "Legal, technical and financial risks are borne by the user.",
-            "The modification is provided as is, without any warranty."
-          ] },
-          { "note": { "kind": "warn", "title": "Please note", "text": "The author is not liable for the consequences of use, including account blocking. Full texts are in the <a href='../legal'>legal information</a> section." } },
-          { "h": "Pre-trial settlement" },
-          { "p": "For anything related to this material — including removal requests and intellectual property claims — write to <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> or send a direct message to <a href='https://t.me/infikot'>@infikot</a>." }
+          {
+            "h": "Legal status"
+          },
+          {
+            "p": "like Max is not affiliated with the owner of the MAX service and was created without their knowledge. The author claims no rights over the original application, does not monetise the project and does not bypass the service's technical protection measures."
+          },
+          {
+            "h": "What that means for you"
+          },
+          {
+            "ul": [
+              "Using the modification violates the MAX terms of use — in particular the ban on modifying the app and intervening in the service from outside.",
+              "The rights holder may suspend or terminate access to the service, including blocking an account.",
+              "Legal, technical and financial risks are borne by the user.",
+              "The modification is provided as is, without any warranty."
+            ]
+          },
+          {
+            "note": {
+              "kind": "warn",
+              "title": "Please note",
+              "text": "The author is not liable for the consequences of use, including account blocking. Full texts are in the <a href='../legal'>legal information</a> section."
+            }
+          },
+          {
+            "h": "Pre-trial settlement"
+          },
+          {
+            "p": "For anything related to this material — including removal requests and intellectual property claims — write to <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> or send a direct message to <a href='https://t.me/infikot'>@infikot</a>."
+          }
         ]
       }
     },
@@ -98,61 +211,108 @@
       "popular": true,
       "readTime": 4,
       "updated": "2026-10-24",
-      "title": { "ru": "Установка и обновление", "en": "Installation and updates" },
+      "title": {
+        "ru": "Установка и обновление",
+        "en": "Installation and updates"
+      },
       "excerpt": {
         "ru": "Требования, пошаговая установка APK, обновление поверх прошлой версии и что делать, если установка не проходит.",
         "en": "Requirements, step-by-step APK installation, updating over a previous version and what to do if installation fails."
       },
       "body": {
         "ru": [
-          { "h": "Требования" },
-          { "ul": [
-            "Android 9 – 16.",
-            "Свободное место под APK и модули.",
-            "Интернет для входа в аккаунт.",
-            "Root-права и VPN не нужны."
-          ] },
-          { "h": "Как установить" },
-          { "ol": [
-            "Скачайте APK из <a href='https://github.com/infikot/like-max/releases' target='_blank' rel='noopener'>GitHub Releases</a> или из зеркала в Telegram.",
-            "Разрешите установку из неизвестных источников, если система попросит.",
-            "Установите APK как обычное приложение. Ставить поверх оригинального MAX не получится — подписи разные.",
-            "Запустите like Max. Первый запуск может закончиться крашем — просто откройте приложение снова."
-          ] },
-          { "note": { "kind": "info", "title": "Скачивайте только из официальных источников", "text": "GitHub Releases и Telegram-канал — единственные источники, за которые отвечает автор. Сборки от третьих лиц могут содержать изменённый код." } },
-          { "h": "Обновление" },
-          { "p": "Новая версия ставится поверх предыдущей версии модификации: данные и настройки сохраняются. Если вы переходите с официального MAX, перенести данные из оригинала нельзя — это разные приложения." },
-          { "h": "Если установка не проходит" },
-          { "ul": [
-            "«Приложение не установлено» — проверьте, нет ли на устройстве оригинального MAX или другой модификации с тем же идентификатором.",
-            "Ошибка разбора пакета — файл скачался не полностью, скачайте заново.",
-            "Не хватает места — освободите память и повторите установку."
-          ] }
+          {
+            "h": "Требования"
+          },
+          {
+            "ul": [
+              "Android 9 – 16.",
+              "Свободное место под APK и модули.",
+              "Интернет для входа в аккаунт.",
+              "Root-права и VPN не нужны."
+            ]
+          },
+          {
+            "h": "Как установить"
+          },
+          {
+            "ol": [
+              "Скачайте APK из <a href='https://github.com/infikot/like-max/releases' target='_blank' rel='noopener'>GitHub Releases</a> или из зеркала в Telegram.",
+              "Разрешите установку из неизвестных источников, если система попросит.",
+              "Установите APK как обычное приложение. Ставить поверх оригинального MAX не получится — подписи разные.",
+              "Запустите like Max. Первый запуск может закончиться крашем — просто откройте приложение снова."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Скачивайте только из официальных источников",
+              "text": "GitHub Releases и Telegram-канал — единственные источники, за которые отвечает автор. Сборки от третьих лиц могут содержать изменённый код."
+            }
+          },
+          {
+            "h": "Обновление"
+          },
+          {
+            "p": "Новая версия ставится поверх предыдущей версии модификации: данные и настройки сохраняются. Если вы переходите с официального MAX, перенести данные из оригинала нельзя — это разные приложения."
+          },
+          {
+            "h": "Если установка не проходит"
+          },
+          {
+            "ul": [
+              "«Приложение не установлено» — проверьте, нет ли на устройстве оригинального MAX или другой модификации с тем же идентификатором.",
+              "Ошибка разбора пакета — файл скачался не полностью, скачайте заново.",
+              "Не хватает места — освободите память и повторите установку."
+            ]
+          }
         ],
         "en": [
-          { "h": "Requirements" },
-          { "ul": [
-            "Android 9 – 16.",
-            "Free space for the APK and its modules.",
-            "Internet access to sign in.",
-            "Root and VPN are not required."
-          ] },
-          { "h": "How to install" },
-          { "ol": [
-            "Download the APK from <a href='https://github.com/infikot/like-max/releases' target='_blank' rel='noopener'>GitHub Releases</a> or from the Telegram mirror.",
-            "Allow installation from unknown sources if the system asks.",
-            "Install the APK like any regular app. Installing over the original MAX will not work — the signatures differ.",
-            "Launch like Max. The first launch may end in a crash — just open the app again."
-          ] },
-          { "note": { "kind": "info", "title": "Official sources only", "text": "GitHub Releases and the Telegram channel are the only sources the author vouches for. Builds from third parties may contain modified code." } },
-          { "h": "Updating" },
-          { "p": "A new version installs over the previous version of the modification: your data and settings are kept. Moving from the official MAX is not possible — they are different applications." },
-          { "h": "If installation fails" },
-          { "ul": [
-            "“App not installed” — check whether the original MAX or another modification with the same identifier is already present.",
-            "Package parsing error — the file did not download completely, download it again.",
-            "Not enough space — free up storage and try again."
-          ] }
+          {
+            "h": "Requirements"
+          },
+          {
+            "ul": [
+              "Android 9 – 16.",
+              "Free space for the APK and its modules.",
+              "Internet access to sign in.",
+              "Root and VPN are not required."
+            ]
+          },
+          {
+            "h": "How to install"
+          },
+          {
+            "ol": [
+              "Download the APK from <a href='https://github.com/infikot/like-max/releases' target='_blank' rel='noopener'>GitHub Releases</a> or from the Telegram mirror.",
+              "Allow installation from unknown sources if the system asks.",
+              "Install the APK like any regular app. Installing over the original MAX will not work — the signatures differ.",
+              "Launch like Max. The first launch may end in a crash — just open the app again."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Official sources only",
+              "text": "GitHub Releases and the Telegram channel are the only sources the author vouches for. Builds from third parties may contain modified code."
+            }
+          },
+          {
+            "h": "Updating"
+          },
+          {
+            "p": "A new version installs over the previous version of the modification: your data and settings are kept. Moving from the official MAX is not possible — they are different applications."
+          },
+          {
+            "h": "If installation fails"
+          },
+          {
+            "ul": [
+              "“App not installed” — check whether the original MAX or another modification with the same identifier is already present.",
+              "Package parsing error — the file did not download completely, download it again.",
+              "Not enough space — free up storage and try again."
+            ]
+          }
         ]
       }
     },
@@ -162,41 +322,88 @@
       "popular": true,
       "readTime": 4,
       "updated": "2026-10-24",
-      "title": { "ru": "Вход в аккаунт и «Цифровой ID»", "en": "Signing in and Digital ID" },
+      "title": {
+        "ru": "Вход в аккаунт и «Цифровой ID»",
+        "en": "Signing in and Digital ID"
+      },
       "excerpt": {
         "ru": "Как войти в свой аккаунт MAX, почему код не приходит и как работают функции, зависящие от подписи APK.",
         "en": "How to sign in to your MAX account, why codes fail to arrive, and how features tied to the APK signature behave."
       },
       "body": {
         "ru": [
-          { "h": "Вход в аккаунт" },
-          { "p": "like Max использует ваш обычный аккаунт MAX — отдельная регистрация не нужна. Номер телефона, чаты и контакты те же, что и в оригинальном приложении." },
-          { "h": "Как войти" },
-          { "ol": [
-            "Откройте приложение и введите номер телефона.",
-            "Введите код из SMS.",
-            "Убедитесь, что модуль подмены данных устройства выключен и не мешает запросам авторизации."
-          ] },
-          { "note": { "kind": "warn", "title": "Совет", "text": "Если код не приходит или вход зависает — подключитесь к мобильному интернету вместо Wi-Fi и попробуйте снова." } },
-          { "h": "«Цифровой ID» и другие функции оригинала" },
-          { "p": "Из-за проверок подписи APK на стороне сервиса часть функций может работать некорректно. В версии 0.0.15 «Цифровой ID» вернули, но в будущих релизах его работа может измениться — следите за новостями канала." },
-          { "h": "Скрытый номер телефона" },
-          { "p": "Если включён модуль скрытия номера, в профиле он не отображается. Открыть или скопировать номер можно одним касанием, а сам модуль — выключить через настройки модификации." }
+          {
+            "h": "Вход в аккаунт"
+          },
+          {
+            "p": "like Max использует ваш обычный аккаунт MAX — отдельная регистрация не нужна. Номер телефона, чаты и контакты те же, что и в оригинальном приложении."
+          },
+          {
+            "h": "Как войти"
+          },
+          {
+            "ol": [
+              "Откройте приложение и введите номер телефона.",
+              "Введите код из SMS.",
+              "Убедитесь, что модуль подмены данных устройства выключен и не мешает запросам авторизации."
+            ]
+          },
+          {
+            "note": {
+              "kind": "warn",
+              "title": "Совет",
+              "text": "Если код не приходит или вход зависает — подключитесь к мобильному интернету вместо Wi-Fi и попробуйте снова."
+            }
+          },
+          {
+            "h": "«Цифровой ID» и другие функции оригинала"
+          },
+          {
+            "p": "Из-за проверок подписи APK на стороне сервиса часть функций может работать некорректно. В версии 0.0.15 «Цифровой ID» вернули, но в будущих релизах его работа может измениться — следите за новостями канала."
+          },
+          {
+            "h": "Скрытый номер телефона"
+          },
+          {
+            "p": "Если включён модуль скрытия номера, в профиле он не отображается. Открыть или скопировать номер можно одним касанием, а сам модуль — выключить через настройки модификации."
+          }
         ],
         "en": [
-          { "h": "Signing in" },
-          { "p": "like Max uses your regular MAX account — no separate registration. Your phone number, chats and contacts are the same as in the original app." },
-          { "h": "How to sign in" },
-          { "ol": [
-            "Open the app and enter your phone number.",
-            "Enter the code from the SMS.",
-            "Make sure the device-spoofing module is off so it does not interfere with authorisation requests."
-          ] },
-          { "note": { "kind": "warn", "title": "Tip", "text": "If the code does not arrive or sign-in hangs, switch from Wi-Fi to mobile data and try again." } },
-          { "h": "Digital ID and other original features" },
-          { "p": "Because the service checks the APK signature, some features may misbehave. Digital ID was brought back in 0.0.15, but its behaviour may change in future releases — watch the channel." },
-          { "h": "Hidden phone number" },
-          { "p": "When the number-hiding module is on, it is not shown in your profile. A single tap reveals or copies it, and the module itself can be switched off in the modification settings." }
+          {
+            "h": "Signing in"
+          },
+          {
+            "p": "like Max uses your regular MAX account — no separate registration. Your phone number, chats and contacts are the same as in the original app."
+          },
+          {
+            "h": "How to sign in"
+          },
+          {
+            "ol": [
+              "Open the app and enter your phone number.",
+              "Enter the code from the SMS.",
+              "Make sure the device-spoofing module is off so it does not interfere with authorisation requests."
+            ]
+          },
+          {
+            "note": {
+              "kind": "warn",
+              "title": "Tip",
+              "text": "If the code does not arrive or sign-in hangs, switch from Wi-Fi to mobile data and try again."
+            }
+          },
+          {
+            "h": "Digital ID and other original features"
+          },
+          {
+            "p": "Because the service checks the APK signature, some features may misbehave. Digital ID was brought back in 0.0.15, but its behaviour may change in future releases — watch the channel."
+          },
+          {
+            "h": "Hidden phone number"
+          },
+          {
+            "p": "When the number-hiding module is on, it is not shown in your profile. A single tap reveals or copies it, and the module itself can be switched off in the modification settings."
+          }
         ]
       }
     },
@@ -206,39 +413,78 @@
       "popular": true,
       "readTime": 3,
       "updated": "2026-10-24",
-      "title": { "ru": "Краш при первом запуске и другие ошибки", "en": "First-launch crash and other errors" },
+      "title": {
+        "ru": "Краш при первом запуске и другие ошибки",
+        "en": "First-launch crash and other errors"
+      },
       "excerpt": {
         "ru": "Почему приложение может закрыться сразу после запуска, что делать и как правильно оформить баг-репорт.",
         "en": "Why the app may close right after launch, what to try, and how to file a useful bug report."
       },
       "body": {
         "ru": [
-          { "h": "Краш при первом запуске" },
-          { "p": "Самая частая ситуация: после установки или обновления приложение закрывается сразу после старта. Это известное поведение модификации — перезайдите в приложение, дальше оно работает штатно." },
-          { "h": "Если краши повторяются" },
-          { "ol": [
-            "Полностью закройте приложение и откройте заново — два-три раза подряд.",
-            "Очистите кеш приложения в настройках системы; удалять данные не нужно.",
-            "Проверьте, что установлена сборка под вашу версию Android (9–16).",
-            "Переустановите APK, скачанный заново из официального источника."
-          ] },
-          { "note": { "kind": "info", "title": "Логи приложения", "text": "В настройках модификации есть просмотр логов (до 150 строк) — он помогает понять причину падения." } },
-          { "h": "Что делать, если не помогло" },
-          { "p": "Напишите в <a href='https://t.me/infikot_dev/22' target='_blank' rel='noopener'>чат сообщества</a>, указав версию мода, базу MAX, модель устройства и версию Android. Так вам помогут быстрее." }
+          {
+            "h": "Краш при первом запуске"
+          },
+          {
+            "p": "Самая частая ситуация: после установки или обновления приложение закрывается сразу после старта. Это известное поведение модификации — перезайдите в приложение, дальше оно работает штатно."
+          },
+          {
+            "h": "Если краши повторяются"
+          },
+          {
+            "ol": [
+              "Полностью закройте приложение и откройте заново — два-три раза подряд.",
+              "Очистите кеш приложения в настройках системы; удалять данные не нужно.",
+              "Проверьте, что установлена сборка под вашу версию Android (9–16).",
+              "Переустановите APK, скачанный заново из официального источника."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Логи приложения",
+              "text": "В настройках модификации есть просмотр логов (до 150 строк) — он помогает понять причину падения."
+            }
+          },
+          {
+            "h": "Что делать, если не помогло"
+          },
+          {
+            "p": "Напишите в <a href='https://t.me/infikot_dev/22' target='_blank' rel='noopener'>чат сообщества</a>, указав версию мода, базу MAX, модель устройства и версию Android. Так вам помогут быстрее."
+          }
         ],
         "en": [
-          { "h": "Crash on first launch" },
-          { "p": "The most common situation: after installing or updating, the app closes immediately on start. This is known behaviour for the modification — reopen the app and it works normally from then on." },
-          { "h": "If crashes repeat" },
-          { "ol": [
-            "Fully close the app and open it again — two or three times in a row.",
-            "Clear the app cache in system settings; you do not need to delete data.",
-            "Make sure the build matches your Android version (9–16).",
-            "Reinstall the APK, downloaded again from an official source."
-          ] },
-          { "note": { "kind": "info", "title": "App logs", "text": "The modification settings include a log viewer (up to 150 lines) that helps identify the cause of a crash." } },
-          { "h": "If nothing helped" },
-          { "p": "Write to the <a href='https://t.me/infikot_dev/22' target='_blank' rel='noopener'>community chat</a> and include the mod version, the MAX base, your device model and Android version. That gets you a faster answer." }
+          {
+            "h": "Crash on first launch"
+          },
+          {
+            "p": "The most common situation: after installing or updating, the app closes immediately on start. This is known behaviour for the modification — reopen the app and it works normally from then on."
+          },
+          {
+            "h": "If crashes repeat"
+          },
+          {
+            "ol": [
+              "Fully close the app and open it again — two or three times in a row.",
+              "Clear the app cache in system settings; you do not need to delete data.",
+              "Make sure the build matches your Android version (9–16).",
+              "Reinstall the APK, downloaded again from an official source."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "App logs",
+              "text": "The modification settings include a log viewer (up to 150 lines) that helps identify the cause of a crash."
+            }
+          },
+          {
+            "h": "If nothing helped"
+          },
+          {
+            "p": "Write to the <a href='https://t.me/infikot_dev/22' target='_blank' rel='noopener'>community chat</a> and include the mod version, the MAX base, your device model and Android version. That gets you a faster answer."
+          }
         ]
       }
     },
@@ -248,45 +494,100 @@
       "popular": true,
       "readTime": 5,
       "updated": "2026-10-24",
-      "title": { "ru": "Приватность: нечиталка, presence и подмена", "en": "Privacy: invisible reading, presence and spoofing" },
+      "title": {
+        "ru": "Приватность: нечиталка, presence и подмена",
+        "en": "Privacy: invisible reading, presence and spoofing"
+      },
       "excerpt": {
         "ru": "Как работают модули приватности, чем урезание presence отличается от невидимки и что остаётся на устройстве.",
         "en": "How the privacy modules work, how trimming presence differs from invisibility, and what stays on your device."
       },
       "body": {
         "ru": [
-          { "h": "Нечиталка и неписалка" },
-          { "p": "Это два отдельных модуля: один скрывает статус прочтения, второй — процесс набора текста и отправку файлов. Каждый включается независимо, у нечиталки есть дополнительные настройки, включая локальные отметки прочтения." },
-          { "h": "Статус присутствия и presence-данные" },
-          { "p": "Отдельный пункт урезает presence-метаданные, которые приложение отправляет на сервер. Это не полная невидимка: вы остаётесь в сети, но объём передаваемых данных меньше." },
-          { "h": "Блокировка аналитики" },
-          { "p": "Большинство доменов аналитики, трекеров и сбора статистики отсекается на уровне сетевых запросов. Актуальный список публикуется в статье <a href='article?slug=blocklist'>про блок-лист доменов</a>." },
-          { "h": "Подмена данных устройства" },
-          { "p": "Модуль подменяет производителя, модель, отпечаток и другие параметры устройства. По умолчанию он отключён — включайте осознанно и не держите активным во время первого входа в аккаунт." },
-          { "note": { "kind": "warn", "title": "Осторожно", "text": "Подмена устройства может мешать входу и работе отдельных функций. Если появились проблемы — выключите модуль и перезапустите приложение." } },
-          { "h": "Что остаётся приватным" },
-          { "ul": [
-            "Удалённые сообщения хранятся локально на устройстве.",
-            "Настройки модификации не покидают телефон.",
-            "У проекта нет собственных серверов и аналитики."
-          ] }
+          {
+            "h": "Нечиталка и неписалка"
+          },
+          {
+            "p": "Это два отдельных модуля: один скрывает статус прочтения, второй — процесс набора текста и отправку файлов. Каждый включается независимо, у нечиталки есть дополнительные настройки, включая локальные отметки прочтения."
+          },
+          {
+            "h": "Статус присутствия и presence-данные"
+          },
+          {
+            "p": "Отдельный пункт урезает presence-метаданные, которые приложение отправляет на сервер. Это не полная невидимка: вы остаётесь в сети, но объём передаваемых данных меньше."
+          },
+          {
+            "h": "Блокировка аналитики"
+          },
+          {
+            "p": "Большинство доменов аналитики, трекеров и сбора статистики отсекается на уровне сетевых запросов. Актуальный список публикуется в статье <a href='article?slug=blocklist'>про блок-лист доменов</a>."
+          },
+          {
+            "h": "Подмена данных устройства"
+          },
+          {
+            "p": "Модуль подменяет производителя, модель, отпечаток и другие параметры устройства. По умолчанию он отключён — включайте осознанно и не держите активным во время первого входа в аккаунт."
+          },
+          {
+            "note": {
+              "kind": "warn",
+              "title": "Осторожно",
+              "text": "Подмена устройства может мешать входу и работе отдельных функций. Если появились проблемы — выключите модуль и перезапустите приложение."
+            }
+          },
+          {
+            "h": "Что остаётся приватным"
+          },
+          {
+            "ul": [
+              "Удалённые сообщения хранятся локально на устройстве.",
+              "Настройки модификации не покидают телефон.",
+              "У проекта нет собственных серверов и аналитики."
+            ]
+          }
         ],
         "en": [
-          { "h": "Invisible reading and typing" },
-          { "p": "These are two separate modules: one hides your read status, the other hides the typing indicator and file-sending events. Each is independent, and the read module has extra settings including local read marks." },
-          { "h": "Presence status and presence data" },
-          { "p": "A separate switch trims the presence metadata the app sends to the server. This is not full invisibility: you are still online, but less data goes out." },
-          { "h": "Analytics blocking" },
-          { "p": "Most analytics, tracker and telemetry domains are cut off at the network level. The current list is published in the <a href='article?slug=blocklist'>domain block list article</a>." },
-          { "h": "Device data spoofing" },
-          { "p": "The module spoofs the manufacturer, model, fingerprint and other device parameters. It is off by default — enable it deliberately and keep it off during your first sign-in." },
-          { "note": { "kind": "warn", "title": "Careful", "text": "Device spoofing can interfere with sign-in and individual features. If problems appear, switch the module off and restart the app." } },
-          { "h": "What stays private" },
-          { "ul": [
-            "Deleted messages are stored locally on your device.",
-            "Modification settings never leave the phone.",
-            "The project has no servers or analytics of its own."
-          ] }
+          {
+            "h": "Invisible reading and typing"
+          },
+          {
+            "p": "These are two separate modules: one hides your read status, the other hides the typing indicator and file-sending events. Each is independent, and the read module has extra settings including local read marks."
+          },
+          {
+            "h": "Presence status and presence data"
+          },
+          {
+            "p": "A separate switch trims the presence metadata the app sends to the server. This is not full invisibility: you are still online, but less data goes out."
+          },
+          {
+            "h": "Analytics blocking"
+          },
+          {
+            "p": "Most analytics, tracker and telemetry domains are cut off at the network level. The current list is published in the <a href='article?slug=blocklist'>domain block list article</a>."
+          },
+          {
+            "h": "Device data spoofing"
+          },
+          {
+            "p": "The module spoofs the manufacturer, model, fingerprint and other device parameters. It is off by default — enable it deliberately and keep it off during your first sign-in."
+          },
+          {
+            "note": {
+              "kind": "warn",
+              "title": "Careful",
+              "text": "Device spoofing can interfere with sign-in and individual features. If problems appear, switch the module off and restart the app."
+            }
+          },
+          {
+            "h": "What stays private"
+          },
+          {
+            "ul": [
+              "Deleted messages are stored locally on your device.",
+              "Modification settings never leave the phone.",
+              "The project has no servers or analytics of its own."
+            ]
+          }
         ]
       }
     },
@@ -296,37 +597,76 @@
       "popular": false,
       "readTime": 4,
       "updated": "2026-10-24",
-      "title": { "ru": "Ayu Module: удалённые сообщения", "en": "Ayu Module: deleted messages" },
+      "title": {
+        "ru": "Ayu Module: удалённые сообщения",
+        "en": "Ayu Module: deleted messages"
+      },
       "excerpt": {
         "ru": "Как модуль сохраняет удалённые собеседником сообщения, какие есть настройки и в чём его границы.",
         "en": "How the module keeps messages deleted by the other side, what you can configure, and where its limits are."
       },
       "body": {
         "ru": [
-          { "h": "Как это работает" },
-          { "p": "Модуль сохраняет сообщения, которые собеседник удалил, и показывает их прямо в чате. Данные остаются на устройстве, а интеграция сделана нативно — визуально это часть переписки." },
-          { "h": "Настройки" },
-          { "ul": [
-            "Полное включение и выключение модуля.",
-            "Размытие удалённых сообщений с настраиваемой прозрачностью — удобно, если к телефону есть доступ у других.",
-            "Отображение значка и статуса удалённого сообщения."
-          ] },
-          { "note": { "kind": "info", "title": "Особенность работы", "text": "Сразу после удаления сообщение может отобразиться после повторного открытия чата — так сделано, чтобы не нагружать приложение." } },
-          { "h": "Границы возможностей" },
-          { "p": "Модуль восстанавливает только то, что успело дойти до вашего устройства. Сообщения, удалённые до установки модуля, восстановить нельзя: история хранится локально и не синхронизируется." }
+          {
+            "h": "Как это работает"
+          },
+          {
+            "p": "Модуль сохраняет сообщения, которые собеседник удалил, и показывает их прямо в чате. Данные остаются на устройстве, а интеграция сделана нативно — визуально это часть переписки."
+          },
+          {
+            "h": "Настройки"
+          },
+          {
+            "ul": [
+              "Полное включение и выключение модуля.",
+              "Размытие удалённых сообщений с настраиваемой прозрачностью — удобно, если к телефону есть доступ у других.",
+              "Отображение значка и статуса удалённого сообщения."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Особенность работы",
+              "text": "Сразу после удаления сообщение может отобразиться после повторного открытия чата — так сделано, чтобы не нагружать приложение."
+            }
+          },
+          {
+            "h": "Границы возможностей"
+          },
+          {
+            "p": "Модуль восстанавливает только то, что успело дойти до вашего устройства. Сообщения, удалённые до установки модуля, восстановить нельзя: история хранится локально и не синхронизируется."
+          }
         ],
         "en": [
-          { "h": "How it works" },
-          { "p": "The module keeps messages the other side deleted and shows them right inside the chat. Data stays on your device, and the integration looks native — visually it is part of the conversation." },
-          { "h": "Settings" },
-          { "ul": [
-            "Full enable and disable of the module.",
-            "Blur for deleted messages with adjustable transparency — useful when others can reach your phone.",
-            "Display of the deleted-message icon and status."
-          ] },
-          { "note": { "kind": "info", "title": "Behaviour detail", "text": "Right after deletion a message may only appear once the chat is reopened — that is intentional, to keep the app light." } },
-          { "h": "Limits" },
-          { "p": "The module restores only what reached your device. Messages deleted before you installed the module cannot be recovered: history is stored locally and is not synchronised." }
+          {
+            "h": "How it works"
+          },
+          {
+            "p": "The module keeps messages the other side deleted and shows them right inside the chat. Data stays on your device, and the integration looks native — visually it is part of the conversation."
+          },
+          {
+            "h": "Settings"
+          },
+          {
+            "ul": [
+              "Full enable and disable of the module.",
+              "Blur for deleted messages with adjustable transparency — useful when others can reach your phone.",
+              "Display of the deleted-message icon and status."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Behaviour detail",
+              "text": "Right after deletion a message may only appear once the chat is reopened — that is intentional, to keep the app light."
+            }
+          },
+          {
+            "h": "Limits"
+          },
+          {
+            "p": "The module restores only what reached your device. Messages deleted before you installed the module cannot be recovered: history is stored locally and is not synchronised."
+          }
         ]
       }
     },
@@ -336,39 +676,74 @@
       "popular": false,
       "readTime": 4,
       "updated": "2026-10-24",
-      "title": { "ru": "Звонки: фильтры, белый список, гео", "en": "Calls: filters, whitelist, geolocation" },
+      "title": {
+        "ru": "Звонки: фильтры, белый список, гео",
+        "en": "Calls: filters, whitelist, geolocation"
+      },
       "excerpt": {
         "ru": "Как настроить белый список входящих вызовов, посмотреть гео звонка и скрыть статус микрофона.",
         "en": "How to set up an incoming-call whitelist, see call geolocation and hide the microphone status."
       },
       "body": {
         "ru": [
-          { "h": "Фильтры звонков" },
-          { "p": "Модуль пропускает только нужные входящие вызовы: контакты из белого списка проходят, остальные — нет. Это пригодится, если номер попал в базы обзвона." },
-          { "h": "Белый список" },
-          { "ol": [
-            "Откройте настройки модификации и раздел звонков.",
-            "Добавьте контакты через встроенный выбор из списка.",
-            "Проверьте, что фильтр включён."
-          ] },
-          { "h": "Гео звонка" },
-          { "p": "Для входящих вызовов можно видеть IP, страну и город. Функция появилась в версии 0.0.18 и работает в связке с сетевыми модулями." },
-          { "h": "Статус микрофона" },
-          { "p": "В версии 0.1.4 добавлено скрытие статуса микрофона во время звонка, а также исправлена работа с IP." }
+          {
+            "h": "Фильтры звонков"
+          },
+          {
+            "p": "Модуль пропускает только нужные входящие вызовы: контакты из белого списка проходят, остальные — нет. Это пригодится, если номер попал в базы обзвона."
+          },
+          {
+            "h": "Белый список"
+          },
+          {
+            "ol": [
+              "Откройте настройки модификации и раздел звонков.",
+              "Добавьте контакты через встроенный выбор из списка.",
+              "Проверьте, что фильтр включён."
+            ]
+          },
+          {
+            "h": "Гео звонка"
+          },
+          {
+            "p": "Для входящих вызовов можно видеть IP, страну и город. Функция появилась в версии 0.0.18 и работает в связке с сетевыми модулями."
+          },
+          {
+            "h": "Статус микрофона"
+          },
+          {
+            "p": "В версии 0.1.4 добавлено скрытие статуса микрофона во время звонка, а также исправлена работа с IP."
+          }
         ],
         "en": [
-          { "h": "Call filters" },
-          { "p": "The module only lets the calls you want through: contacts on the whitelist get in, everyone else does not. Handy if your number ended up on spam dialling lists." },
-          { "h": "Whitelist" },
-          { "ol": [
-            "Open the modification settings and the calls section.",
-            "Add contacts through the built-in contact picker.",
-            "Make sure the filter is enabled."
-          ] },
-          { "h": "Call geolocation" },
-          { "p": "For incoming calls you can see the IP, country and city. The feature arrived in 0.0.18 and works together with the network modules." },
-          { "h": "Microphone status" },
-          { "p": "Version 0.1.4 added hiding of the microphone status during a call, along with IP handling fixes." }
+          {
+            "h": "Call filters"
+          },
+          {
+            "p": "The module only lets the calls you want through: contacts on the whitelist get in, everyone else does not. Handy if your number ended up on spam dialling lists."
+          },
+          {
+            "h": "Whitelist"
+          },
+          {
+            "ol": [
+              "Open the modification settings and the calls section.",
+              "Add contacts through the built-in contact picker.",
+              "Make sure the filter is enabled."
+            ]
+          },
+          {
+            "h": "Call geolocation"
+          },
+          {
+            "p": "For incoming calls you can see the IP, country and city. The feature arrived in 0.0.18 and works together with the network modules."
+          },
+          {
+            "h": "Microphone status"
+          },
+          {
+            "p": "Version 0.1.4 added hiding of the microphone status during a call, along with IP handling fixes."
+          }
         ]
       }
     },
@@ -378,49 +753,96 @@
       "popular": false,
       "readTime": 4,
       "updated": "2026-10-24",
-      "title": { "ru": "Внешний вид: темы, обои, иконка", "en": "Look & feel: themes, wallpapers, icon" },
+      "title": {
+        "ru": "Внешний вид: темы, обои, иконка",
+        "en": "Look & feel: themes, wallpapers, icon"
+      },
       "excerpt": {
         "ru": "AMOLED и прозрачные темы, обои для чатов, смена иконки и кастомизация интерфейса.",
         "en": "AMOLED and transparent themes, chat wallpapers, icon swapping and interface customisation."
       },
       "body": {
         "ru": [
-          { "h": "Темы" },
-          { "ul": [
-            "<strong>AMOLED</strong> — глубокая чёрная тема для OLED-экранов, экономит батарею.",
-            "<strong>Прозрачная тема</strong> — полупрозрачные поверхности интерфейса.",
-            "<strong>Monet</strong> — окраска по системной палитре Android."
-          ] },
-          { "h": "Обои для чатов" },
-          { "p": "В качестве фона чата можно поставить изображение, GIF или видео. Отдельный предпросмотр помогает подобрать масштаб и понять, как фон сочетается с темой." },
-          { "h": "Иконка, название и нижнее меню" },
-          { "ul": [
-            "Смена иконки рабочего стола: like Max, Classic, IME.",
-            "Кастомное нижнее меню с анимацией при реорганизации вкладок.",
-            "Покраска текста сообщения — например, в красный цвет."
-          ] },
-          { "note": { "kind": "info", "title": "Про переименование", "text": "Нестабильное переименование приложения было убрано в версии 0.0.14 — используйте смену иконки вместо него." } },
-          { "h": "Скрытие лишнего" },
-          { "p": "Из интерфейса можно убрать отдельные кнопки, папки и вкладки — например, вкладку со всеми чатами или архив. Есть настройка фона закрепов." }
+          {
+            "h": "Темы"
+          },
+          {
+            "ul": [
+              "<strong>AMOLED</strong> — глубокая чёрная тема для OLED-экранов, экономит батарею.",
+              "<strong>Прозрачная тема</strong> — полупрозрачные поверхности интерфейса.",
+              "<strong>Monet</strong> — окраска по системной палитре Android."
+            ]
+          },
+          {
+            "h": "Обои для чатов"
+          },
+          {
+            "p": "В качестве фона чата можно поставить изображение, GIF или видео. Отдельный предпросмотр помогает подобрать масштаб и понять, как фон сочетается с темой."
+          },
+          {
+            "h": "Иконка, название и нижнее меню"
+          },
+          {
+            "ul": [
+              "Смена иконки рабочего стола: like Max, Classic, IME.",
+              "Кастомное нижнее меню с анимацией при реорганизации вкладок.",
+              "Покраска текста сообщения — например, в красный цвет."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Про переименование",
+              "text": "Нестабильное переименование приложения было убрано в версии 0.0.14 — используйте смену иконки вместо него."
+            }
+          },
+          {
+            "h": "Скрытие лишнего"
+          },
+          {
+            "p": "Из интерфейса можно убрать отдельные кнопки, папки и вкладки — например, вкладку со всеми чатами или архив. Есть настройка фона закрепов."
+          }
         ],
         "en": [
-          { "h": "Themes" },
-          { "ul": [
-            "<strong>AMOLED</strong> — a deep black theme for OLED panels that saves battery.",
-            "<strong>Transparent theme</strong> — semi-transparent interface surfaces.",
-            "<strong>Monet</strong> — colouring driven by the Android system palette."
-          ] },
-          { "h": "Chat wallpapers" },
-          { "p": "A chat background can be an image, a GIF or a video. A dedicated preview helps you pick the scale and see how it works with your theme." },
-          { "h": "Icon, name and bottom menu" },
-          { "ul": [
-            "Swap the launcher icon: like Max, Classic, IME.",
-            "A custom bottom menu with animation when tabs are reorganised.",
-            "Colour message text — red, for example."
-          ] },
-          { "note": { "kind": "info", "title": "About renaming", "text": "Unstable app renaming was removed in 0.0.14 — use icon swapping instead." } },
-          { "h": "Hiding clutter" },
-          { "p": "Individual buttons, folders and tabs can be removed from the interface — for example the all-chats tab or the archive. Pin background options are included." }
+          {
+            "h": "Themes"
+          },
+          {
+            "ul": [
+              "<strong>AMOLED</strong> — a deep black theme for OLED panels that saves battery.",
+              "<strong>Transparent theme</strong> — semi-transparent interface surfaces.",
+              "<strong>Monet</strong> — colouring driven by the Android system palette."
+            ]
+          },
+          {
+            "h": "Chat wallpapers"
+          },
+          {
+            "p": "A chat background can be an image, a GIF or a video. A dedicated preview helps you pick the scale and see how it works with your theme."
+          },
+          {
+            "h": "Icon, name and bottom menu"
+          },
+          {
+            "ul": [
+              "Swap the launcher icon: like Max, Classic, IME.",
+              "A custom bottom menu with animation when tabs are reorganised.",
+              "Colour message text — red, for example."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "About renaming",
+              "text": "Unstable app renaming was removed in 0.0.14 — use icon swapping instead."
+            }
+          },
+          {
+            "h": "Hiding clutter"
+          },
+          {
+            "p": "Individual buttons, folders and tabs can be removed from the interface — for example the all-chats tab or the archive. Pin background options are included."
+          }
         ]
       }
     },
@@ -430,41 +852,88 @@
       "popular": false,
       "readTime": 3,
       "updated": "2026-10-24",
-      "title": { "ru": "Блок-лист доменов и телеметрия", "en": "Domain block list and telemetry" },
+      "title": {
+        "ru": "Блок-лист доменов и телеметрия",
+        "en": "Domain block list and telemetry"
+      },
       "excerpt": {
         "ru": "Какие домены блокирует модификация, как обновляется список и что ещё уменьшает утечки данных.",
         "en": "Which domains the modification blocks, how the list is updated and what else reduces data leakage."
       },
       "body": {
         "ru": [
-          { "h": "Зачем блокировать домены" },
-          { "p": "Приложение MAX обращается к сервисам аналитики и статистики. Модуль сетевых блокировок отсекает эти запросы, чтобы наружу уходило меньше телеметрии." },
-          { "h": "Что блокируется" },
-          { "ul": [
-            "Домены аналитики и трекинга.",
-            "Сервисы сбора статистики.",
-            "Дополнительные KWS-эндпоинты."
-          ] },
-          { "h": "Актуальный список" },
-          { "p": "Блок-лист обновляется вместе с модификацией и публикуется отдельным сообщением: <a href='https://t.me/infikot_dev/3/227' target='_blank' rel='noopener'>Блок-лист доменов (upd)</a>." },
-          { "note": { "kind": "warn", "title": "Не путать", "text": "Блокировка аналитики не влияет на доставку сообщений, но при нестабильной сети дополнительные проверки могут замедлить запуск приложения." } },
-          { "h": "Что ещё уменьшает утечки" },
-          { "p": "Урезание presence-данных и подмена информации об устройстве — подробности в статье про <a href='article?slug=privacy'>приватность</a>." }
+          {
+            "h": "Зачем блокировать домены"
+          },
+          {
+            "p": "Приложение MAX обращается к сервисам аналитики и статистики. Модуль сетевых блокировок отсекает эти запросы, чтобы наружу уходило меньше телеметрии."
+          },
+          {
+            "h": "Что блокируется"
+          },
+          {
+            "ul": [
+              "Домены аналитики и трекинга.",
+              "Сервисы сбора статистики.",
+              "Дополнительные KWS-эндпоинты."
+            ]
+          },
+          {
+            "h": "Актуальный список"
+          },
+          {
+            "p": "Блок-лист обновляется вместе с модификацией и публикуется отдельным сообщением: <a href='https://t.me/infikot_dev/3/227' target='_blank' rel='noopener'>Блок-лист доменов (upd)</a>."
+          },
+          {
+            "note": {
+              "kind": "warn",
+              "title": "Не путать",
+              "text": "Блокировка аналитики не влияет на доставку сообщений, но при нестабильной сети дополнительные проверки могут замедлить запуск приложения."
+            }
+          },
+          {
+            "h": "Что ещё уменьшает утечки"
+          },
+          {
+            "p": "Урезание presence-данных и подмена информации об устройстве — подробности в статье про <a href='article?slug=privacy'>приватность</a>."
+          }
         ],
         "en": [
-          { "h": "Why block domains" },
-          { "p": "The MAX app talks to analytics and statistics services. The network-blocking module cuts those requests so less telemetry leaves your device." },
-          { "h": "What is blocked" },
-          { "ul": [
-            "Analytics and tracking domains.",
-            "Statistics-collection services.",
-            "Additional KWS endpoints."
-          ] },
-          { "h": "The current list" },
-          { "p": "The block list is updated together with the modification and published as a separate post: <a href='https://t.me/infikot_dev/3/227' target='_blank' rel='noopener'>Domain block list (upd)</a>." },
-          { "note": { "kind": "warn", "title": "Not to be confused", "text": "Analytics blocking does not affect message delivery, but on an unstable network the extra lookups can slow the app down at launch." } },
-          { "h": "What else reduces leakage" },
-          { "p": "Presence trimming and device data spoofing — details in the <a href='article?slug=privacy'>privacy article</a>." }
+          {
+            "h": "Why block domains"
+          },
+          {
+            "p": "The MAX app talks to analytics and statistics services. The network-blocking module cuts those requests so less telemetry leaves your device."
+          },
+          {
+            "h": "What is blocked"
+          },
+          {
+            "ul": [
+              "Analytics and tracking domains.",
+              "Statistics-collection services.",
+              "Additional KWS endpoints."
+            ]
+          },
+          {
+            "h": "The current list"
+          },
+          {
+            "p": "The block list is updated together with the modification and published as a separate post: <a href='https://t.me/infikot_dev/3/227' target='_blank' rel='noopener'>Domain block list (upd)</a>."
+          },
+          {
+            "note": {
+              "kind": "warn",
+              "title": "Not to be confused",
+              "text": "Analytics blocking does not affect message delivery, but on an unstable network the extra lookups can slow the app down at launch."
+            }
+          },
+          {
+            "h": "What else reduces leakage"
+          },
+          {
+            "p": "Presence trimming and device data spoofing — details in the <a href='article?slug=privacy'>privacy article</a>."
+          }
         ]
       }
     },
@@ -474,49 +943,285 @@
       "popular": false,
       "readTime": 3,
       "updated": "2026-10-24",
-      "title": { "ru": "Обратная связь и баг-репорты", "en": "Feedback and bug reports" },
+      "title": {
+        "ru": "Обратная связь и баг-репорты",
+        "en": "Feedback and bug reports"
+      },
       "excerpt": {
         "ru": "Куда писать о багах и идеях и как оформить сообщение, чтобы вам ответили быстро.",
         "en": "Where to report bugs and ideas, and how to phrase it so you get a fast answer."
       },
       "body": {
         "ru": [
-          { "h": "Куда писать" },
-          { "ul": [
-            "<a href='https://t.me/infikot_dev/22' target='_blank' rel='noopener'>Чат сообщества</a> — вопросы, помощь, баги.",
-            "<a href='https://t.me/infikot_dev' target='_blank' rel='noopener'>Telegram-канал</a> — релизы и анонсы.",
-            "<a href='https://github.com/infikot/like-max/issues' target='_blank' rel='noopener'>GitHub Issues</a> — если удобнее оформить задачу.",
-            "<a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> — юридические вопросы и претензии."
-          ] },
-          { "h": "Как оформить баг-репорт" },
-          { "ol": [
-            "Версия мода (например, 0.1.4) и база MAX (26.37.1 (6900)).",
-            "Модель устройства и версия Android.",
-            "Что вы сделали и что произошло — по шагам.",
-            "Скриншот или лог из приложения, если он есть."
-          ] },
-          { "note": { "kind": "info", "title": "Идеи и функции", "text": "Предложения по функциям тоже приветствуются: напишите в чат, что хотелось бы видеть в следующей версии." } },
-          { "h": "Что не рассматривается" },
-          { "p": "Просьбы обойти блокировку аккаунта, получить доступ к чужому профилю, а также сборки от третьих лиц не поддерживаются." }
+          {
+            "h": "Куда писать"
+          },
+          {
+            "ul": [
+              "<a href='https://t.me/infikot_dev/22' target='_blank' rel='noopener'>Чат сообщества</a> — вопросы, помощь, баги.",
+              "<a href='https://t.me/infikot_dev' target='_blank' rel='noopener'>Telegram-канал</a> — релизы и анонсы.",
+              "<a href='https://github.com/infikot/like-max/issues' target='_blank' rel='noopener'>GitHub Issues</a> — если удобнее оформить задачу.",
+              "<a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> — юридические вопросы и претензии."
+            ]
+          },
+          {
+            "h": "Как оформить баг-репорт"
+          },
+          {
+            "ol": [
+              "Версия мода (например, 0.1.4) и база MAX (26.37.1 (6900)).",
+              "Модель устройства и версия Android.",
+              "Что вы сделали и что произошло — по шагам.",
+              "Скриншот или лог из приложения, если он есть."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Идеи и функции",
+              "text": "Предложения по функциям тоже приветствуются: напишите в чат, что хотелось бы видеть в следующей версии."
+            }
+          },
+          {
+            "h": "Что не рассматривается"
+          },
+          {
+            "p": "Просьбы обойти блокировку аккаунта, получить доступ к чужому профилю, а также сборки от третьих лиц не поддерживаются."
+          }
         ],
         "en": [
-          { "h": "Where to write" },
-          { "ul": [
-            "<a href='https://t.me/infikot_dev/22' target='_blank' rel='noopener'>Community chat</a> — questions, help, bugs.",
-            "<a href='https://t.me/infikot_dev' target='_blank' rel='noopener'>Telegram channel</a> — releases and announcements.",
-            "<a href='https://github.com/infikot/like-max/issues' target='_blank' rel='noopener'>GitHub Issues</a> — if you prefer a formal ticket.",
-            "<a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> — legal questions and claims."
-          ] },
-          { "h": "How to file a good bug report" },
-          { "ol": [
-            "The mod version (for example 0.1.4) and the MAX base (26.37.1 (6900)).",
-            "Your device model and Android version.",
-            "What you did and what happened — step by step.",
-            "A screenshot or the in-app log, if you have one."
-          ] },
-          { "note": { "kind": "info", "title": "Ideas and features", "text": "Feature suggestions are welcome too: tell us in the chat what you would like to see next." } },
-          { "h": "What is out of scope" },
-          { "p": "Requests to bypass an account block, gain access to someone else's profile, or support third-party builds are not answered." }
+          {
+            "h": "Where to write"
+          },
+          {
+            "ul": [
+              "<a href='https://t.me/infikot_dev/22' target='_blank' rel='noopener'>Community chat</a> — questions, help, bugs.",
+              "<a href='https://t.me/infikot_dev' target='_blank' rel='noopener'>Telegram channel</a> — releases and announcements.",
+              "<a href='https://github.com/infikot/like-max/issues' target='_blank' rel='noopener'>GitHub Issues</a> — if you prefer a formal ticket.",
+              "<a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> — legal questions and claims."
+            ]
+          },
+          {
+            "h": "How to file a good bug report"
+          },
+          {
+            "ol": [
+              "The mod version (for example 0.1.4) and the MAX base (26.37.1 (6900)).",
+              "Your device model and Android version.",
+              "What you did and what happened — step by step.",
+              "A screenshot or the in-app log, if you have one."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Ideas and features",
+              "text": "Feature suggestions are welcome too: tell us in the chat what you would like to see next."
+            }
+          },
+          {
+            "h": "What is out of scope"
+          },
+          {
+            "p": "Requests to bypass an account block, gain access to someone else's profile, or support third-party builds are not answered."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "architecture",
+      "cat": "project",
+      "popular": false,
+      "readTime": 7,
+      "updated": "2026-10-29",
+      "title": {
+        "ru": "Почему код закрыт и как собирается like Max",
+        "en": "Why the code is closed and how like Max is built"
+      },
+      "excerpt": {
+        "ru": "LSPosed-модуль, скрапер символов на тестовом устройстве, обфусцированные значения и сборка без скрапера — как устроен проект и почему исходники не публикуются.",
+        "en": "An LSPosed module, a symbol scraper on a test device, obfuscated values and a release built without the scraper — how the project works and why the sources are not published."
+      },
+      "body": {
+        "ru": [
+          {
+            "p": "like Max — не форк с открытым кодом и не «сборка из исходников MAX». Это модуль для LSPosed, который внедряется в клиент на устройстве, плюс отдельный офлайн-пайплайн, который превращает новую версию MAX в готовый APK. Кода в репозитории нет, и ниже — что именно закрыто и почему."
+          },
+          {
+            "h": "Из чего состоит проект"
+          },
+          {
+            "ul": [
+              "<strong>LSPosed-модуль.</strong> Основная часть: хуки на классы и методы клиента, настройки, интерфейс модуля.",
+              "<strong>Скрапер символов.</strong> Отдельный инструмент, который запускается на тестовом устройстве и вытаскивает актуальные имена из обфусцированного клиента.",
+              "<strong>Генератор сборки.</strong> Собирает модуль уже с готовой таблицей символов — без скрапера и без устройства.",
+              "<strong>npatcher.</strong> Кастомный патчер: вливает dex и ресурсы модуля в APK клиента, правит манифест и подпись.",
+              "<strong>Сайт и документация.</strong> То, что вы читаете сейчас: описание, база знаний, ссылки на релизы."
+            ]
+          },
+          {
+            "h": "Почему код не открыт"
+          },
+          {
+            "p": "Решение не про «жадность» и не про секреты: открытый код здесь просто опаснее, чем закрытый. Причин несколько."
+          },
+          {
+            "ul": [
+              "<strong>Карта хуков.</strong> Публичные исходники — это точный список классов, методов и полей, которые патчатся. Клиенту достаточно переименовать их раньше, и мод ломается на старте. Закрытый код не делает обфускацию непобедимой, но не отдаёт готовую карту.",
+              "<strong>Побочный ущерб.</strong> Тот же код позволяет собирать чужие сборки: с иной подписью, встроенной рекламой, скраперами переписок. Такие APK распространяются от имени проекта, и отличить их от официальных пользователю почти невозможно.",
+              "<strong>Инфраструктура.</strong> В пайплайне есть подпись, адреса и служебные ключи. Даже если вынести их в переменные, открытый репозиторий провоцирует «собери мне то же самое» — и дальше по кругу к предыдущему пункту.",
+              "<strong>Юридическая рамка.</strong> Мод существует в серой зоне: он неизбежно опирается на результаты разбора чужого клиента. Публикация исходников делает эту опору явной и заметной, не давая проекту ничего взамен."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "Что открыто",
+              "text": "Сайт, база знаний, релизы, блок-лист доменов и баг-трекер. Ошибки в документации и на сайте можно присылать как обычно — это открытая часть проекта."
+            }
+          },
+          {
+            "h": "Скрапер и «символы»"
+          },
+          {
+            "p": "Клиент MAX обфусцирован: имена классов и методов меняются от версии к версии и ничего не говорят о смысле. Хук, привязанный к имени, ломается при первом же обновлении сервиса."
+          },
+          {
+            "p": "Поэтому в пайплайне есть отдельный шаг. На тестовом устройстве запускается скрапер: он проходит по приложению, находит нужные классы по поведению и сигнатурам и записывает их текущие обфусцированные значения — «символы» — в таблицу. Таблица — это обычные данные: соответствие «что нам нужно» → «как это сейчас называется в клиенте»."
+          },
+          {
+            "p": "Скрапер — инструмент разработчика. Он требует живой клиент, тестовое устройство и аккаунт, поэтому в релиз он не попадает и в сборке не участвует."
+          },
+          {
+            "h": "Как получается релиз"
+          },
+          {
+            "ol": [
+              "Выходит новая версия MAX — прогоняем скрапер и обновляем таблицу символов.",
+              "Собираем модуль с готовой таблицей: без устройства, без скрапера, без доступа к аккаунту.",
+              "npatcher вливает dex и ресурсы модуля в APK клиента, правит манифест и подпись.",
+              "Проверяем ключевые сценарии на тестовом устройстве, поднимаем версию и публикуем GitHub Release."
+            ]
+          },
+          {
+            "p": "Именно поэтому сборка воспроизводима: все изменяемые имена уже зафиксированы в таблице, а сам релиз собирается детерминированно из неё."
+          },
+          {
+            "h": "Почему релиз собирается без скрапера"
+          },
+          {
+            "p": "Скраперу нужен живой клиент и устройство — в CI этого нет и не должно быть. Разделение на «снять символы» и «собрать релиз» даёт простую гарантию: в опубликованную сборку не попадает ничего, что умеет ходить в приложение и что-то из него вытаскивать."
+          },
+          {
+            "h": "Что это значит для вас"
+          },
+          {
+            "ul": [
+              "Обновления выходят после переноса на новую версию MAX, а не в день релиза сервиса.",
+              "Старые сборки не «докручиваются» автоматически: нужна новая версия мода.",
+              "Если функция сломалась после обновления MAX — чаще всего это сдвиг символов. Пришлите логи: по ним видно, какой хук не нашёл цель."
+            ]
+          },
+          {
+            "note": {
+              "kind": "warn",
+              "title": "Помните",
+              "text": "Модификация неофициальная и может нарушать правила сервиса. Риски и ограничения описаны в разделе <a href='../legal'>правового статуса</a>."
+            }
+          },
+          {
+            "p": "Дальше по теме: <a href='article?slug=intro'>что такое like Max</a> и <a href='article?slug=privacy'>как работают модули приватности</a>."
+          }
+        ],
+        "en": [
+          {
+            "p": "like Max is not an open-source fork and not a “build from MAX sources”. It is an LSPosed module injected into the client on the device, plus a separate offline pipeline that turns a new MAX version into a ready APK. There is no source repository, and below is what exactly is closed and why."
+          },
+          {
+            "h": "What the project consists of"
+          },
+          {
+            "ul": [
+              "<strong>LSPosed module.</strong> The core: hooks into client classes and methods, settings, the module UI.",
+              "<strong>Symbol scraper.</strong> A separate tool that runs on a test device and pulls current names out of the obfuscated client.",
+              "<strong>Build generator.</strong> Builds the module with a ready symbol table — no scraper, no device.",
+              "<strong>npatcher.</strong> A custom patcher: merges the module's dex and resources into the client APK, adjusts the manifest and signature.",
+              "<strong>Site and documentation.</strong> What you are reading now: overview, knowledge base, release links."
+            ]
+          },
+          {
+            "h": "Why the code is not public"
+          },
+          {
+            "p": "This is not about hoarding or secrets: open code here is simply more dangerous than closed code. There are several reasons."
+          },
+          {
+            "ul": [
+              "<strong>Hook map.</strong> Public sources are an exact list of the classes, methods and fields being patched. It is enough for the client to rename them first and the mod breaks on start. Closed code does not make obfuscation unbeatable, but it does not hand over a ready map.",
+              "<strong>Collateral damage.</strong> The same code lets others build foreign APKs: with a different signature, embedded ads, message scrapers. Those builds circulate under the project's name, and users can barely tell them from official ones.",
+              "<strong>Infrastructure.</strong> The pipeline includes signing, endpoints and service keys. Even moved into variables, a public repo invites “build me the same” — and then we are back to the previous point.",
+              "<strong>Legal frame.</strong> The mod lives in a grey zone: it inevitably relies on analysing someone else's client. Publishing sources makes that reliance explicit and visible while giving the project nothing in return."
+            ]
+          },
+          {
+            "note": {
+              "kind": "info",
+              "title": "What is open",
+              "text": "The site, knowledge base, releases, the domain block list and the bug tracker. Documentation and site fixes are welcome — that part of the project is open."
+            }
+          },
+          {
+            "h": "The scraper and the “symbols”"
+          },
+          {
+            "p": "The MAX client is obfuscated: class and method names change between versions and say nothing about their purpose. A hook tied to a name breaks on the first service update."
+          },
+          {
+            "p": "That is why the pipeline has a separate step. A scraper runs on a test device: it walks the app, finds the needed classes by behaviour and signatures, and records their current obfuscated values — “symbols” — into a table. The table is ordinary data: “what we need” → “what it is called in this client build”."
+          },
+          {
+            "p": "The scraper is a developer tool. It needs a live client, a test device and an account, so it never ships with a release and takes no part in the build."
+          },
+          {
+            "h": "How a release is made"
+          },
+          {
+            "ol": [
+              "A new MAX version is out — we run the scraper and update the symbol table.",
+              "We build the module with the ready table: no device, no scraper, no account access.",
+              "npatcher merges the module's dex and resources into the client APK, adjusting the manifest and signature.",
+              "Key scenarios are tested on a test device, the version is bumped and a GitHub Release is published."
+            ]
+          },
+          {
+            "p": "That is what makes builds reproducible: every mutable name is already fixed in the table, and the release itself is built deterministically from it."
+          },
+          {
+            "h": "Why releases are built without the scraper"
+          },
+          {
+            "p": "The scraper needs a live client and a device — CI has neither, and should not. Splitting “capture symbols” from “build the release” gives a simple guarantee: the published build contains nothing that can talk to the app or pull anything out of it."
+          },
+          {
+            "h": "What it means for you"
+          },
+          {
+            "ul": [
+              "Updates arrive after the port to a new MAX version, not on the service release day.",
+              "Older builds do not “finish themselves”: a new mod version is required.",
+              "If a feature broke after a MAX update, it is usually a symbol shift. Send logs: they show which hook missed its target."
+            ]
+          },
+          {
+            "note": {
+              "kind": "warn",
+              "title": "Keep in mind",
+              "text": "The modification is unofficial and may violate the service rules. Risks and restrictions are described in the <a href='../legal'>legal status</a> section."
+            }
+          },
+          {
+            "p": "Related: <a href='article?slug=intro'>what like Max is</a> and <a href='article?slug=privacy'>how the privacy modules work</a>."
+          }
         ]
       }
     }

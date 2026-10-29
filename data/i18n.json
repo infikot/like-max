@@ -14,16 +14,16 @@
         "desc": "Подробная инструкция из базы знаний like Max."
       },
       "tos": {
-        "title": "Пользовательское соглашение — like Max",
-        "desc": "Условия использования неофициальной модификации like Max: лицензия, ограничения, отказ от гарантий, риски блокировки аккаунта MAX."
+        "title": "Условия использования — like Max",
+        "desc": "Условия использования like Max: лицензия, что разрешено и что нельзя, риски ограничения аккаунта, обновления и ответственность."
       },
       "pp": {
         "title": "Политика конфиденциальности — like Max",
-        "desc": "Какие данные обрабатывает like Max, какие разрешения используются и почему проект не собирает персональные данные."
+        "desc": "Какие данные остаются на устройстве, какие разрешения нужны и почему у like Max нет своих серверов, аналитики и телеметрии."
       },
       "legal": {
-        "title": "Правовой статус модификации — like Max",
-        "desc": "Правовой статус like Max, соотношение с Пользовательским соглашением MAX, порядок досудебного урегулирования претензий."
+        "title": "Правовой статус — like Max",
+        "desc": "Что такое like Max, чем проект не является, как соотносятся правила сервиса MAX, авторские права, претензии и удаление материалов."
       },
       "thanks": {
         "title": "Отдельное спасибо — like Max",
@@ -236,9 +236,13 @@
     "legal": {
       "eyebrow": "Правовая информация",
       "revision": "Дата редакции",
-      "tosTitle": "Пользовательское соглашение",
+      "tosTitle": "Условия использования",
+      "tosLead": "Лицензия, что разрешено и что нельзя, риски для аккаунта и порядок обновлений.",
       "ppTitle": "Политика конфиденциальности",
-      "legalTitle": "Правовой статус"
+      "ppLead": "Какие данные остаются на устройстве, а какие обрабатывает сам сервис.",
+      "legalTitle": "Правовой статус",
+      "legalLead": "Что такое проект, чем он не является и как устроены претензии.",
+      "docsTitle": "Документы проекта"
     },
     "thanks": {
       "eyebrow": "Благодарности",
@@ -304,15 +308,15 @@
       },
       "tos": {
         "title": "Terms of use — like Max",
-        "desc": "Terms of use for the unofficial like Max modification: licence, restrictions, warranty disclaimer and the risks of a MAX account restriction."
+        "desc": "like Max terms of use: licence, what is allowed and what is not, account restriction risks, updates and liability."
       },
       "pp": {
         "title": "Privacy policy — like Max",
-        "desc": "What data like Max processes, which permissions it uses and why the project collects no personal data."
+        "desc": "Which data stays on your device, which permissions are used and why like Max has no servers, analytics or telemetry of its own."
       },
       "legal": {
-        "title": "Legal status of the modification — like Max",
-        "desc": "Legal status of like Max, how it relates to the MAX terms of use, and how to file a pre-trial claim."
+        "title": "Legal status — like Max",
+        "desc": "What like Max is, what the project is not, how the MAX service rules relate, copyright, claims and takedown."
       },
       "thanks": {
         "title": "Special thanks — like Max",
@@ -523,11 +527,15 @@
       "madeBy": "project author"
     },
     "legal": {
-      "eyebrow": "Legal information",
-      "revision": "Revision date",
+      "eyebrow": "Legal",
+      "revision": "Last updated",
       "tosTitle": "Terms of use",
+      "tosLead": "Licence, what is allowed and what is not, account risks and how updates work.",
       "ppTitle": "Privacy policy",
-      "legalTitle": "Legal status"
+      "ppLead": "Which data stays on your device and which is handled by the service itself.",
+      "legalTitle": "Legal status",
+      "legalLead": "What the project is, what it is not and how claims are handled.",
+      "docsTitle": "Project documents"
     },
     "thanks": {
       "eyebrow": "Credits",

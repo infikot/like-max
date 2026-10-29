@@ -985,7 +985,7 @@ button {
   margin-top: 28px;
 }
 .prose p { line-height: 1.72; }
-.prose ul, .prose ol { display: grid; gap: 9px; padding-left: 4px; }
+.prose ul, .prose ol { display: grid; gap: 9px; padding-left: 4px; list-style: none; }
 .prose li { position: relative; padding-left: 22px; }
 .prose ul li::before {
   content: "";
@@ -1047,6 +1047,45 @@ button {
   padding-top: 24px;
   border-top: 1px solid var(--outline);
 }
+
+/* ---------- legal documents grid ---------- */
+.doc-grid { display: grid; gap: 14px; }
+.doc-grid__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+.doc-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--outline);
+  background: color-mix(in srgb, var(--surface-1) 88%, transparent);
+  color: inherit;
+  transition: transform var(--med) var(--spring), border-color var(--med) var(--spring), background var(--med) var(--spring);
+}
+.doc-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--primary) 42%, transparent);
+  background: color-mix(in srgb, var(--surface-2) 92%, transparent);
+}
+.doc-card__icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+.doc-card__icon svg { width: 20px; height: 20px; }
+.doc-card__body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.doc-card__body b { font-size: .98rem; font-weight: 600; }
+.doc-card__body span { color: var(--text-2); font-size: .87rem; line-height: 1.45; }
+.doc-card__arrow { margin-left: auto; color: var(--text-3); }
+.doc-card__arrow svg { width: 16px; height: 16px; }
 
 /* ---------- thanks page ---------- */
 .doc__lead {

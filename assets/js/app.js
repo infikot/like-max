@@ -721,11 +721,29 @@
         "</div>" +
       "</div>" +
       '<div class="prose reveal">' + renderBlocks(blocks) + "</div>" +
+      (kind === "legal" ? docCards() : "") +
       '<div class="doc__foot">' +
         '<a class="btn btn--outline" href="' + U.home + '">' + icon("arrowLeft") + esc(t("action.home")) + "</a>" +
         '<a class="btn btn--tonal" href="' + U.kb + '">' + icon("book") + esc(t("action.kb")) + "</a>" +
       "</div>" +
     "</div></section>";
+  }
+
+  function docCards() {
+    function card(href, ic, title, text) {
+      return '<a class="doc-card reveal" href="' + href + '">' +
+        '<span class="doc-card__icon">' + icon(ic) + "</span>" +
+        '<span class="doc-card__body"><b>' + esc(title) + "</b><span>" + esc(text) + "</span></span>" +
+        '<span class="doc-card__arrow">' + icon("arrowRight") + "</span>" +
+      "</a>";
+    }
+    return '<div class="doc-grid mt-32">' +
+      '<h3 class="subhead">' + esc(t("legal.docsTitle")) + "</h3>" +
+      '<div class="doc-grid__row">' +
+        card(U.tos, "file", t("legal.tosTitle"), t("legal.tosLead")) +
+        card(U.pp, "lock", t("legal.ppTitle"), t("legal.ppLead")) +
+      "</div>" +
+    "</div>";
   }
 
   function renderThanks() {
