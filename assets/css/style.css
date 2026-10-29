@@ -830,7 +830,7 @@ button {
 }
 .release__meta svg { width: 15px; height: 15px; flex: none; opacity: .8; }
 .release__body { padding: 0 clamp(18px, 2.4vw, 26px) 22px; }
-.release__body ul { display: grid; gap: 9px; }
+.release__body ul, .release__body ol { display: grid; gap: 9px; list-style: none; }
 .release__body li {
   position: relative;
   padding-left: 24px;
