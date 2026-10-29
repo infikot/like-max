@@ -29,9 +29,9 @@
           ] },
           { "h": "Как это устроено технически" },
           { "p": "Все изменения находятся в клиентской части приложения: серверы MAX не затрагиваются, технические средства защиты не обходятся. Модули работают локально, и каждый можно отключить по отдельности." },
-          { "note": { "kind": "info", "title": "Важно", "text": "Модификация неофициальная и нарушает Пользовательское соглашение MAX. Перед установкой прочитайте <a href='../legal.html'>правовой статус модификации</a>." } },
+          { "note": { "kind": "info", "title": "Важно", "text": "Модификация неофициальная и нарушает Пользовательское соглашение MAX. Перед установкой прочитайте <a href='../legal'>правовой статус модификации</a>." } },
           { "h": "Куда идти дальше" },
-          { "p": "Начните с <a href='article.html?slug=install'>установки</a>, затем загляните в разбор <a href='article.html?slug=privacy'>модулей приватности</a>. Если что-то пошло не так — смотрите <a href='article.html?slug=crash'>решение проблем</a>." }
+          { "p": "Начните с <a href='article?slug=install'>установки</a>, затем загляните в разбор <a href='article?slug=privacy'>модулей приватности</a>. Если что-то пошло не так — смотрите <a href='article?slug=crash'>решение проблем</a>." }
         ],
         "en": [
           { "p": "like Max is an unofficial modification of the MAX app for Android. It installs as a separate application and does not replace the original MAX: its own APK, its own signature, its own icon. You get the same messenger with a set of extra features and settings the original does not have." },
@@ -44,9 +44,9 @@
           ] },
           { "h": "How it works technically" },
           { "p": "All changes live in the client part of the app: MAX servers are untouched and no technical protection measures are bypassed. Modules run locally and each one can be switched off independently." },
-          { "note": { "kind": "info", "title": "Important", "text": "The modification is unofficial and violates the MAX terms of use. Read the <a href='../legal.html'>legal status</a> before installing." } },
+          { "note": { "kind": "info", "title": "Important", "text": "The modification is unofficial and violates the MAX terms of use. Read the <a href='../legal'>legal status</a> before installing." } },
           { "h": "Where to go next" },
-          { "p": "Start with <a href='article.html?slug=install'>installation</a>, then take a look at the <a href='article.html?slug=privacy'>privacy modules</a>. If something went wrong, see <a href='article.html?slug=crash'>troubleshooting</a>." }
+          { "p": "Start with <a href='article?slug=install'>installation</a>, then take a look at the <a href='article?slug=privacy'>privacy modules</a>. If something went wrong, see <a href='article?slug=crash'>troubleshooting</a>." }
         ]
       }
     },
@@ -72,7 +72,7 @@
             "Юридические, технические и финансовые риски пользователь принимает на себя.",
             "Модификация предоставляется «как есть», без каких-либо гарантий."
           ] },
-          { "note": { "kind": "warn", "title": "Обратите внимание", "text": "Автор не несёт ответственности за последствия использования, включая блокировку аккаунта. Полные тексты — в разделе <a href='../legal.html'>правовой информации</a>." } },
+          { "note": { "kind": "warn", "title": "Обратите внимание", "text": "Автор не несёт ответственности за последствия использования, включая блокировку аккаунта. Полные тексты — в разделе <a href='../legal'>правовой информации</a>." } },
           { "h": "Досудебное урегулирование" },
           { "p": "По вопросам, связанным с материалом, включая запросы на удаление и претензии по интеллектуальным правам, пишите на <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> или в личные сообщения <a href='https://t.me/infikot'>@infikot</a>." }
         ],
@@ -86,7 +86,7 @@
             "Legal, technical and financial risks are borne by the user.",
             "The modification is provided as is, without any warranty."
           ] },
-          { "note": { "kind": "warn", "title": "Please note", "text": "The author is not liable for the consequences of use, including account blocking. Full texts are in the <a href='../legal.html'>legal information</a> section." } },
+          { "note": { "kind": "warn", "title": "Please note", "text": "The author is not liable for the consequences of use, including account blocking. Full texts are in the <a href='../legal'>legal information</a> section." } },
           { "h": "Pre-trial settlement" },
           { "p": "For anything related to this material — including removal requests and intellectual property claims — write to <a href='mailto:danilaexdanila@gmail.com'>danilaexdanila@gmail.com</a> or send a direct message to <a href='https://t.me/infikot'>@infikot</a>." }
         ]
@@ -260,7 +260,7 @@
           { "h": "Статус присутствия и presence-данные" },
           { "p": "Отдельный пункт урезает presence-метаданные, которые приложение отправляет на сервер. Это не полная невидимка: вы остаётесь в сети, но объём передаваемых данных меньше." },
           { "h": "Блокировка аналитики" },
-          { "p": "Большинство доменов аналитики, трекеров и сбора статистики отсекается на уровне сетевых запросов. Актуальный список публикуется в статье <a href='article.html?slug=blocklist'>про блок-лист доменов</a>." },
+          { "p": "Большинство доменов аналитики, трекеров и сбора статистики отсекается на уровне сетевых запросов. Актуальный список публикуется в статье <a href='article?slug=blocklist'>про блок-лист доменов</a>." },
           { "h": "Подмена данных устройства" },
           { "p": "Модуль подменяет производителя, модель, отпечаток и другие параметры устройства. По умолчанию он отключён — включайте осознанно и не держите активным во время первого входа в аккаунт." },
           { "note": { "kind": "warn", "title": "Осторожно", "text": "Подмена устройства может мешать входу и работе отдельных функций. Если появились проблемы — выключите модуль и перезапустите приложение." } },
@@ -277,7 +277,7 @@
           { "h": "Presence status and presence data" },
           { "p": "A separate switch trims the presence metadata the app sends to the server. This is not full invisibility: you are still online, but less data goes out." },
           { "h": "Analytics blocking" },
-          { "p": "Most analytics, tracker and telemetry domains are cut off at the network level. The current list is published in the <a href='article.html?slug=blocklist'>domain block list article</a>." },
+          { "p": "Most analytics, tracker and telemetry domains are cut off at the network level. The current list is published in the <a href='article?slug=blocklist'>domain block list article</a>." },
           { "h": "Device data spoofing" },
           { "p": "The module spoofs the manufacturer, model, fingerprint and other device parameters. It is off by default — enable it deliberately and keep it off during your first sign-in." },
           { "note": { "kind": "warn", "title": "Careful", "text": "Device spoofing can interfere with sign-in and individual features. If problems appear, switch the module off and restart the app." } },
@@ -449,7 +449,7 @@
           { "p": "Блок-лист обновляется вместе с модификацией и публикуется отдельным сообщением: <a href='https://t.me/infikot_dev/3/227' target='_blank' rel='noopener'>Блок-лист доменов (upd)</a>." },
           { "note": { "kind": "warn", "title": "Не путать", "text": "Блокировка аналитики не влияет на доставку сообщений, но при нестабильной сети дополнительные проверки могут замедлить запуск приложения." } },
           { "h": "Что ещё уменьшает утечки" },
-          { "p": "Урезание presence-данных и подмена информации об устройстве — подробности в статье про <a href='article.html?slug=privacy'>приватность</a>." }
+          { "p": "Урезание presence-данных и подмена информации об устройстве — подробности в статье про <a href='article?slug=privacy'>приватность</a>." }
         ],
         "en": [
           { "h": "Why block domains" },
@@ -464,7 +464,7 @@
           { "p": "The block list is updated together with the modification and published as a separate post: <a href='https://t.me/infikot_dev/3/227' target='_blank' rel='noopener'>Domain block list (upd)</a>." },
           { "note": { "kind": "warn", "title": "Not to be confused", "text": "Analytics blocking does not affect message delivery, but on an unstable network the extra lookups can slow the app down at launch." } },
           { "h": "What else reduces leakage" },
-          { "p": "Presence trimming and device data spoofing — details in the <a href='article.html?slug=privacy'>privacy article</a>." }
+          { "p": "Presence trimming and device data spoofing — details in the <a href='article?slug=privacy'>privacy article</a>." }
         ]
       }
     },

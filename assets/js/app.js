@@ -84,11 +84,11 @@
   var U = {
     home: BASE,
     kb: BASE + "kb/",
-    article: BASE + "kb/article.html",
-    tos: BASE + "tos.html",
-    pp: BASE + "pp.html",
-    legal: BASE + "legal.html",
-    thanks: BASE + "thanks.html"
+    article: BASE + "kb/article",
+    tos: BASE + "tos",
+    pp: BASE + "pp",
+    legal: BASE + "legal",
+    thanks: BASE + "thanks"
   };
 
   var FALLBACKS = {
@@ -863,6 +863,38 @@
   /* ---------- page transitions ---------- */
   var leaving = false;
 
+  function scrollToHashTarget(hash, smooth) {
+    var id = decodeURIComponent(String(hash || "").replace(/^#/, ""));
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (!el) return;
+    var bar = document.getElementById("topbar");
+    var offset = (bar ? bar.offsetHeight : 0) + 14;
+    var top = el.getBoundingClientRect().top + (window.scrollY || window.pageYOffset || 0) - offset;
+    if (top < 0) top = 0;
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    try {
+      window.scrollTo({ top: top, behavior: smooth && !reduce ? "smooth" : "auto" });
+    } catch (err) {
+      window.scrollTo(0, top);
+    }
+  }
+
+  /* same-page anchor: smooth jump with sticky-header offset */
+  function jumpToHash(a, e) {
+    var next;
+    try { next = new URL(a.href, location.href); } catch (err) { return false; }
+    if (next.origin !== location.origin) return false;
+    if (next.href.split("#")[0] !== location.href.split("#")[0]) return false;
+    if (!next.hash || next.hash.length < 2) return false;
+    if (!document.getElementById(decodeURIComponent(next.hash.slice(1)))) return false;
+    e.preventDefault();
+    if (window.history && history.pushState) history.pushState(null, "", next.hash);
+    else location.hash = next.hash;
+    scrollToHashTarget(next.hash, true);
+    return true;
+  }
+
   function navigateSmoothly(a) {
     if (leaving) return;
     var href = a.getAttribute("href");
@@ -877,7 +909,7 @@
 
     var here = location.href.split("#")[0];
     var there = next.href.split("#")[0];
-    if (here === there) return;              /* same page — let the hash jump happen */
+    if (here === there) return;              /* same page — handled by jumpToHash */
 
     if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
@@ -885,6 +917,10 @@
     document.documentElement.setAttribute("data-leaving", "1");
     setTimeout(function () { location.href = next.href; }, 165);
   }
+
+  window.addEventListener("hashchange", function () {
+    scrollToHashTarget(location.hash, true);
+  });
 
   window.addEventListener("pageshow", function (e) {
     if (!e.persisted) return;
@@ -983,6 +1019,7 @@
       var a = e.target.closest("a[href]");
       if (a && !e.defaultPrevented && e.button === 0 &&
           !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+        if (jumpToHash(a, e)) return;
         navigateSmoothly(a);
       }
     });
@@ -1054,6 +1091,11 @@
       applyMeta();
       renderAll();
       document.documentElement.setAttribute("data-ready", "1");
+      if (location.hash) {
+        setTimeout(function () { scrollToHashTarget(location.hash, false); }, 0);
+        setTimeout(function () { scrollToHashTarget(location.hash, false); }, 200);
+        setTimeout(function () { scrollToHashTarget(location.hash, false); }, 420);
+      }
     }).catch(function (err) {
       if (window.console) console.error(err);
       if (main) main.innerHTML = '<section class="section"><div class="wrap"><div class="card notice notice--warn">' +
