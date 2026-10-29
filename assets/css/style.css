@@ -964,7 +964,7 @@ button {
   flex-wrap: wrap;
   gap: 8px 16px;
   margin-top: 16px;
-  color: var(--text-3);
+  color: var(--text-2);
   font-size: .86rem;
 }
 .doc__meta span { display: inline-flex; align-items: center; gap: 6px; }
@@ -972,7 +972,7 @@ button {
 .doc__meta a { color: inherit; }
 .doc__meta a:hover { color: var(--primary); }
 
-.prose { color: var(--text-2); }
+.prose { color: var(--text); }
 .prose > * + * { margin-top: 16px; }
 .prose h2 {
   color: var(--text);
@@ -986,15 +986,14 @@ button {
 }
 .prose p { line-height: 1.72; }
 .prose ul, .prose ol { display: grid; gap: 9px; padding-left: 4px; list-style: none; }
-.prose li { position: relative; padding-left: 22px; }
+.prose li { position: relative; padding-left: 22px; line-height: 1.72; }
 .prose ul li::before {
   content: "";
   position: absolute;
-  left: 5px; top: .7em;
+  left: 5px; top: calc(.86em - 3px);
   width: 6px; height: 6px;
   border-radius: 50%;
   background: var(--primary);
-  opacity: .85;
 }
 .prose ol { counter-reset: n; }
 .prose ol li { padding-left: 28px; }
@@ -1006,6 +1005,7 @@ button {
   color: var(--primary);
   font-weight: 700;
   font-size: .9em;
+  line-height: calc(1.72em / .9);
 }
 .prose a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .prose a:hover { text-decoration-thickness: 2px; }
@@ -1083,8 +1083,8 @@ button {
 .doc-card__icon svg { width: 20px; height: 20px; }
 .doc-card__body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .doc-card__body b { font-size: .98rem; font-weight: 600; }
-.doc-card__body span { color: var(--text-2); font-size: .87rem; line-height: 1.45; }
-.doc-card__arrow { margin-left: auto; color: var(--text-3); }
+.doc-card__body span { color: color-mix(in srgb, var(--text) 84%, var(--text-2)); font-size: .87rem; line-height: 1.45; }
+.doc-card__arrow { margin-left: auto; color: var(--primary); }
 .doc-card__arrow svg { width: 16px; height: 16px; }
 
 /* ---------- thanks page ---------- */
@@ -1135,7 +1135,7 @@ button {
   font-size: .78rem !important;
   color: var(--text-3) !important;
 }
-.thanks-card__arrow { margin-left: auto; color: var(--text-3); }
+.thanks-card__arrow { margin-left: auto; color: var(--primary); }
 .thanks-card__arrow svg { width: 17px; height: 17px; }
 
 .thanks-people {
@@ -1441,7 +1441,7 @@ button {
   background: var(--primary-soft);
 }
 .modal-doc svg:first-child { width: 18px; height: 18px; flex: none; color: var(--primary); }
-.modal-doc svg:last-child { width: 16px; height: 16px; flex: none; margin-left: auto; color: var(--text-3); }
+.modal-doc svg:last-child { width: 16px; height: 16px; flex: none; margin-left: auto; color: var(--primary); }
 .modal-doc span { min-width: 0; }
 
 .modal__body a { color: var(--primary); }
@@ -1525,12 +1525,12 @@ button {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  color: var(--text-3);
+  color: var(--text-2);
   font-size: .84rem;
   margin-bottom: 18px;
 }
 .crumbs a:hover { color: var(--primary); }
-.crumbs svg { width: 14px; height: 14px; opacity: .6; }
+.crumbs svg { width: 14px; height: 14px; opacity: .9; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1080px) {
