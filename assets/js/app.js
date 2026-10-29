@@ -14,7 +14,11 @@
     chat: "https://t.me/infikot_dev_chat",
     blocklist: "https://t.me/infikot_dev/3/227",
     author: "https://t.me/infikot",
-    email: "mailto:danilaexdanila@gmail.com"
+    email: "mailto:danilaexdanila@gmail.com",
+    support: "https://t.me/infikot_dev/6",
+    pda: "https://4pda.to",
+    safemax: "https://t.me/safemax_mod",
+    kometa: "https://github.com/KometTeam"
   };
 
   var ICONS = {
@@ -46,6 +50,7 @@
     menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
     chevronUp: '<path d="M6 14.5l6-6 6 6"/>',
     chevronDown: '<path d="M6 9.5l6 6 6-6"/>',
+    chevronRight: '<path d="M9.5 6l6 6-6 6"/>',
     arrowRight: '<path d="M5 12h13M13 6.5l5.5 5.5L13 17.5"/>',
     arrowLeft: '<path d="M19 12H6M11 6.5L5.5 12l5.5 5.5"/>',
     external: '<path d="M14 4.5h5.5V10"/><path d="M19.5 4.5L11 13"/><path d="M18 14v5a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 19V7.5A1.5 1.5 0 015 6h5"/>',
@@ -387,8 +392,7 @@
   }
 
   function featureSection() {
-    var chips = get(dict || {}, lang + ".features.chips") || [];
-    var cards = get(dict || {}, lang + ".features.cards") || [];
+    var highlight = get(dict || {}, lang + ".features.highlight") || [];
     var all = (config && config.features) || [];
     return '<section class="section" id="features"><div class="wrap">' +
       '<div class="section-head reveal"><div>' +
@@ -397,23 +401,26 @@
         "<p>" + esc(t("features.lead")) + "</p>" +
       "</div></div>" +
       missingBlock() +
-      '<div class="chips reveal mt-20">' + chips.map(function (c) {
-        return '<span class="chip">' + icon("check") + esc(c) + "</span>";
-      }).join("") + "</div>" +
-      '<div class="feature-grid mt-28">' + cards.map(function (c) {
-        return '<article class="feature reveal">' +
+      '<h3 class="subhead reveal mt-32">' + esc(t("features.highlightTitle")) + "</h3>" +
+      '<div class="feature-grid feature-grid--key mt-20">' + highlight.map(function (c) {
+        return '<article class="feature feature--key reveal">' +
           '<span class="feature__icon">' + icon(c.icon || "check") + "</span>" +
-          "<h3>" + esc(c.title) + "</h3>" +
-          "<p>" + esc(c.text) + "</p>" +
-          (c.tag ? '<span class="feature__tag">' + esc(c.tag) + "</span>" : "") +
+          "<div>" +
+            "<h3>" + esc(c.title) + "</h3>" +
+            "<p>" + esc(c.text) + "</p>" +
+          "</div>" +
         "</article>";
       }).join("") + "</div>" +
-      '<details class="faq mt-28 reveal" style="margin-top:28px">' +
-        "<summary>" + esc(t("features.allTitle", { n: all.length })) + "</summary>" +
-        '<div class="faq__body"><ul class="clean-list">' +
-          all.map(function (f) { return "<li>" + esc(f) + "</li>"; }).join("") +
-        "</ul></div>" +
-      "</details>" +
+      '<div class="card more-card mt-32 reveal">' +
+        '<div class="more-card__head">' +
+          '<span class="feature__icon">' + icon("list") + "</span>" +
+          "<div><h3>" + esc(t("features.moreTitle")) + "</h3>" +
+          "<p>" + esc(t("features.moreLead")) + "</p></div>" +
+        "</div>" +
+        '<ul class="more-list">' +
+          all.map(function (f) { return "<li>" + icon("check") + "<span>" + esc(f) + "</span></li>"; }).join("") +
+        "</ul>" +
+      "</div>" +
     "</div></section>";
   }
 
@@ -731,19 +738,34 @@
       '<div class="doc__head reveal">' +
         '<span class="eyebrow">' + icon("heart") + esc(t("thanks.eyebrow")) + "</span>" +
         "<h1>" + esc(t("thanks.title")) + "</h1>" +
-        '<p class="muted" style="margin-top:14px;max-width:62ch">' + esc(t("thanks.lead")) + "</p>" +
+        '<p class="doc__lead">' + esc(t("thanks.lead")) + "</p>" +
       "</div>" +
-      '<div class="feature-grid">' + items.map(function (c) {
-        return '<article class="feature reveal">' +
-          '<span class="feature__icon">' + icon(c.icon || "heart") + "</span>" +
-          "<h3>" + esc(c.title) + "</h3>" +
-          "<p>" + esc(c.text) + "</p>" +
-          (c.tag ? '<span class="feature__tag">' + esc(c.tag) + "</span>" : "") +
-        "</article>";
+      '<div class="thanks-grid">' + items.map(function (c) {
+        return '<a class="thanks-card reveal" href="' + esc(c.href || "#") + '" target="_blank" rel="noopener">' +
+          '<span class="thanks-card__icon">' + icon(c.icon || "heart") + "</span>" +
+          '<span class="thanks-card__body">' +
+            "<b>" + esc(c.title) + "</b>" +
+            "<span>" + esc(c.text) + "</span>" +
+            (c.note ? '<span class="thanks-card__note">' + esc(c.note) + "</span>" : "") +
+          "</span>" +
+          '<span class="thanks-card__arrow">' + icon("external") + "</span>" +
+        "</a>";
       }).join("") + "</div>" +
-      '<div class="callout callout--info mt-28 reveal">' +
-        '<span class="callout__title">' + esc(t("thanks.donorsTitle")) + "</span>" +
-        "<p>" + esc(t("thanks.donorsText")) + "</p>" +
+      '<div class="card thanks-people mt-28 reveal">' +
+        '<span class="feature__icon">' + icon("heart") + "</span>" +
+        "<div>" +
+          "<h3>" + esc(t("thanks.peopleTitle")) + "</h3>" +
+          "<p>" + esc(t("thanks.peopleText")) + "</p>" +
+        "</div>" +
+      "</div>" +
+      '<div class="cta-strip mt-20 reveal">' +
+        "<div>" +
+          "<h3>" + esc(t("thanks.supportTitle")) + "</h3>" +
+          "<p>" + esc(t("thanks.supportText")) + "</p>" +
+        "</div>" +
+        '<a class="btn btn--filled" href="' + LINKS.support + '" target="_blank" rel="noopener">' +
+          icon("heart") + esc(t("thanks.supportBtn")) +
+        "</a>" +
       "</div>" +
       '<div class="doc__foot">' +
         '<a class="btn btn--outline" href="' + U.home + '">' + icon("arrowLeft") + esc(t("action.home")) + "</a>" +
@@ -822,16 +844,53 @@
     if (accepted()) { goDownload(); return; }
     var pts = get(dict || {}, lang + ".modal.points") || [];
     openModal(
-      '<p>' + esc(t("modal.intro")) + "</p>" +
-      "<ul>" + pts.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul>" +
-      '<p>' + esc(t("modal.more")) + "</p>" +
-      '<p><a href="' + U.tos + '">' + esc(t("legal.tosTitle")) + "</a> · <a href=\"" + U.pp + '">' + esc(t("legal.ppTitle")) + "</a></p>" +
-      '<div class="row" style="margin-top:6px">' +
-        '<button class="btn btn--filled" type="button" data-accept>' + icon("check") + esc(t("modal.accept")) + "</button>" +
+      '<p class="modal-lead">' + esc(t("modal.intro")) + "</p>" +
+      '<ul class="modal-list">' + pts.map(function (p) {
+        return '<li><span class="modal-list__mark">' + icon("check") + "</span><span>" + esc(p) + "</span></li>";
+      }).join("") + "</ul>" +
+      '<div class="modal-docs">' +
+        '<span class="modal-docs__title">' + esc(t("modal.more")) + "</span>" +
+        '<a class="modal-doc" href="' + U.tos + '">' + icon("file") + "<span>" + esc(t("legal.tosTitle")) + "</span>" + icon("chevronRight") + "</a>" +
+        '<a class="modal-doc" href="' + U.pp + '">' + icon("lock") + "<span>" + esc(t("legal.ppTitle")) + "</span>" + icon("chevronRight") + "</a>" +
+      "</div>" +
+      '<div class="modal__actions">' +
         '<button class="btn btn--text" type="button" data-modal-close>' + esc(t("modal.decline")) + "</button>" +
+        '<button class="btn btn--filled" type="button" data-accept>' + icon("check") + esc(t("modal.accept")) + "</button>" +
       "</div>"
     );
   }
+
+  /* ---------- page transitions ---------- */
+  var leaving = false;
+
+  function navigateSmoothly(a) {
+    if (leaving) return;
+    var href = a.getAttribute("href");
+    if (!href || href.charAt(0) === "#") return;
+    if (a.target && a.target !== "_self") return;
+    if (a.hasAttribute("download")) return;
+    if (/^(mailto:|tel:|javascript:)/i.test(href)) return;
+
+    var next;
+    try { next = new URL(a.href, location.href); } catch (e) { return; }
+    if (next.origin !== location.origin) return;
+
+    var here = location.href.split("#")[0];
+    var there = next.href.split("#")[0];
+    if (here === there) return;              /* same page — let the hash jump happen */
+
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    leaving = true;
+    document.documentElement.setAttribute("data-leaving", "1");
+    setTimeout(function () { location.href = next.href; }, 165);
+  }
+
+  window.addEventListener("pageshow", function (e) {
+    if (!e.persisted) return;
+    leaving = false;
+    document.documentElement.removeAttribute("data-leaving");
+  });
 
   /* ---------- interactions ---------- */
   function bindMain() {
@@ -919,6 +978,13 @@
         var d2 = document.getElementById("drawer");
         if (d2) { d2.removeAttribute("data-open"); document.body.style.overflow = ""; }
       }
+
+      /* seamless cross-page transition for internal links */
+      var a = e.target.closest("a[href]");
+      if (a && !e.defaultPrevented && e.button === 0 &&
+          !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+        navigateSmoothly(a);
+      }
     });
 
     document.addEventListener("keydown", function (e) {
@@ -940,8 +1006,7 @@
   }
 
   var io = null;
-  function initReveal() {
-    var nodes = document.querySelectorAll(".reveal");
+  function initReveal() {    var nodes = document.querySelectorAll(".reveal");
     if (!("IntersectionObserver" in window)) {
       for (var i = 0; i < nodes.length; i++) nodes[i].classList.add("is-in");
       return;

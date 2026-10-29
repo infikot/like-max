@@ -8,12 +8,14 @@
       "changes": {
         "ru": [
           "Перенос на новую версию MAX 26.37.1 (6900)",
-          "Фикс айпи и скрытие статуса микрофона в звонках",
+          "Локализация мода на все языки",
+          "Подмена устройства включается отдельным переключателем",
           "Исправления ошибок и оптимизация"
         ],
         "en": [
           "Ported to MAX 26.37.1 (6900)",
-          "IP fix and hidden microphone status in calls",
+          "Localisation of the mod into all languages",
+          "Device spoofing now has its own switch",
           "Bug fixes and optimisation"
         ]
       }

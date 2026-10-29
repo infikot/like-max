@@ -93,97 +93,41 @@
         "Полное скрытие тем: темы убираются из интерфейса целиком",
         "Прозрачные темы: работают на Android 12 и выше"
       ],
-      "chips": [
-        "Нечиталка",
-        "Неписалка",
-        "SafetyModule",
-        "Ayu Module",
-        "AMOLED",
-        "Прозрачные темы",
-        "Обои для чатов",
-        "Фильтры звонков",
-        "Скрытие папок",
-        "Блокировка трекеров",
-        "Подмена устройства",
-        "Скрытие номера",
-        "Debug-меню",
-        "Без проверок VPN и Root"
-      ],
-      "allTitle": "Полный список возможностей из релиза ({n})",
-      "cards": [
+      "highlightTitle": "Ключевое",
+      "highlight": [
         {
           "icon": "shield",
           "title": "SafetyModule",
-          "text": "Контроль загрузки модулей с защитой от сбоев. Даже если модуль не загрузился, приложение запустится и останется рабочим.",
-          "tag": "Ядро"
+          "text": "Контроль загрузки модулей: если модуль не загрузился, приложение всё равно запустится и останется рабочим."
+        },
+        {
+          "icon": "folder",
+          "title": "Архивы",
+          "text": "Отдельное хранилище чатов, а не скрытая вкладка: архив живёт своей жизнью и не мешает основному списку."
         },
         {
           "icon": "eye",
           "title": "Нечиталка и Неписалка",
-          "text": "Скрытие статуса прочтения, процесса набора текста и отправки файлов — каждый пункт настраивается отдельно.",
-          "tag": "Приватность"
+          "text": "Скрытие статуса прочтения, набора текста и отправки файлов — каждый пункт включается отдельно."
         },
         {
           "icon": "wand",
-          "title": "Ayu Module",
-          "text": "Удалённые собеседником сообщения остаются на устройстве: аккуратная нативная интеграция, локальное хранение и размытие с настраиваемой прозрачностью.",
-          "tag": "Модуль"
+          "title": "Ayu-модуль",
+          "text": "Удалённые собеседником сообщения остаются на устройстве: нативная интеграция и локальное хранение."
         },
         {
           "icon": "wifi",
           "title": "Блокировка аналитики",
-          "text": "Большинство доменов аналитики, трекеров и сбора статистики отсекается на уровне сетевых запросов. Актуальный блок-лист публикуется отдельно.",
-          "tag": "Сеть"
-        },
-        {
-          "icon": "refresh",
-          "title": "Подмена данных устройства",
-          "text": "Производитель, модель, отпечаток и другие параметры устройства — свои значения. Полезно, чтобы не светить реальное железо.",
-          "tag": "Приватность"
-        },
-        {
-          "icon": "image",
-          "title": "Обои для чатов",
-          "text": "Свои фоны для чатов: изображения, GIF и видео. Отдельный предпросмотр, чтобы подобрать то, что нужно.",
-          "tag": "Внешний вид"
+          "text": "Домены трекеров и сбора статистики отсекаются на уровне сетевых запросов."
         },
         {
           "icon": "palette",
-          "title": "AMOLED и прозрачные темы",
-          "text": "Глубокая чёрная тема для OLED-экранов, прозрачный интерфейс и нативная Monet-окраска системы.",
-          "tag": "Внешний вид"
-        },
-        {
-          "icon": "phone",
-          "title": "Фильтры звонков",
-          "text": "Белый список входящих вызовов, скрытие статуса микрофона и гео звонка: IP, страна и город.",
-          "tag": "Звонки"
-        },
-        {
-          "icon": "folder",
-          "title": "Скрытие папок и вкладок",
-          "text": "Уберите лишнее из интерфейса: например, вкладку со всеми чатами или архив. С настройкой фона закрепов.",
-          "tag": "Интерфейс"
-        },
-        {
-          "icon": "user",
-          "title": "Скрытие номера телефона",
-          "text": "Номер не показывается в профиле, а при необходимости его можно открыть или скопировать одним касанием. Модуль можно выключить.",
-          "tag": "Приватность"
-        },
-        {
-          "icon": "camera",
-          "title": "Скриншоты и инструменты",
-          "text": "Создание скриншотов в любом экране, инсайдерское меню с путями и запросами приложения, быстрый доступ в magic-room и логи до 150 строк.",
-          "tag": "Инструменты"
-        },
-        {
-          "icon": "sparkles",
           "title": "Персонализация",
-          "text": "Иконка и название приложения, кастомное нижнее меню, покраска текста сообщения и локализация интерфейса — включая английский.",
-          "tag": "Внешний вид"
+          "text": "Иконка и название приложения, нижнее меню, AMOLED и прозрачные темы, покраска текста сообщений."
         }
-      ]
+      ],
+      "moreTitle": "И многое другое",
+      "moreLead": "Полный список возможностей текущего релиза — всё включается и выключается в настройках мода."
     },
     "updates": {
       "eyebrow": "История обновлений",
@@ -299,15 +243,36 @@
     "thanks": {
       "eyebrow": "Благодарности",
       "title": "Отдельное спасибо",
-      "lead": "Сайт и мод живут благодаря сообществу: тестам, баг-репортам и площадкам, которые помогают распространять сборки. Здесь — место для благодарностей; часть ссылок появится позже.",
+      "lead": "Мод и сайт живут благодаря сообществу: идеям, тестам и баг-репортам. Здесь — те, кто помог проекту появиться и не сломаться.",
       "items": [
-        { "icon": "globe", "title": "4PDA", "text": "Тема мода на крупнейшем профильном форуме. Ссылка на тему появится здесь позже.", "tag": "скоро" },
-        { "icon": "shield", "title": "SafeMax", "text": "Проверка сборок на безопасность и чистоту APK. Контакты и ссылка — позже.", "tag": "скоро" },
-        { "icon": "layers", "title": "Kometa", "text": "Дополнительное зеркало загрузок и помощь с установкой. Реквизиты появятся позже.", "tag": "скоро" },
-        { "icon": "heart", "title": "Донатеры", "text": "Те, кто поддержал проект деньгами, тестами или идеями. Имена появятся после согласования.", "tag": "скоро" }
+        {
+          "icon": "globe",
+          "title": "4PDA",
+          "text": "За идеи и аудиторию",
+          "href": "https://4pda.to",
+          "note": "4pda.to"
+        },
+        {
+          "icon": "shield",
+          "title": "SafeMax",
+          "text": "За идеи",
+          "href": "https://t.me/safemax_mod",
+          "note": "@safemax_mod"
+        },
+        {
+          "icon": "layers",
+          "title": "Kometa",
+          "text": "За идеи",
+          "href": "https://github.com/KometTeam",
+          "note": "github.com/KometTeam"
+        }
       ],
-      "donorsTitle": "Поддержать проект",
-      "donorsText": "Реквизиты для донатов и список поддержавших появятся позже. Уже сейчас помочь можно тестами, баг-репортами в @infikot и распространением официальных сборок."
+      "peopleTitle": "Донатеры и подписчики",
+      "peopleText": "Отдельное спасибо всем, кто поддерживал проект: донатам, тестам, баг-репортам, идеям и просто добрым словам. Без вас мод бы не обновлялся так часто.",
+      "supportTitle": "Поддержать проект",
+      "supportText": "Донат — самый быстрый способ помочь развитию. Баг-репорты с логами тоже считаются.",
+      "supportBtn": "Поддержать",
+      "supportHref": "https://t.me/infikot_dev/6"
     },
     "modal": {
       "title": "Условия использования",
@@ -318,7 +283,7 @@
         "Программа предоставляется «как есть», без гарантий; автор не отвечает за последствия использования.",
         "Собственных серверов и аналитики у проекта нет: обработка данных остаётся на устройстве."
       ],
-      "more": "Полные тексты документов:",
+      "more": "Полные тексты документов",
       "accept": "Принять и скачать",
       "decline": "Отклонить"
     }
@@ -409,7 +374,7 @@
     },
     "features": {
       "eyebrow": "Features",
-      "title": "What the original is missing",
+      "title": "More than the original offers",
       "lead": "Every feature is a separate module you can switch off. Nothing is forced — only the safe modules are on by default.",
       "missingTitle": "What the original is missing",
       "missing": [
@@ -417,97 +382,41 @@
         "Full theme hiding: themes can be removed from the interface entirely",
         "Transparent themes: available on Android 12 and newer"
       ],
-      "chips": [
-        "No read receipts",
-        "No typing status",
-        "SafetyModule",
-        "Ayu Module",
-        "AMOLED",
-        "Transparent themes",
-        "Chat wallpapers",
-        "Call filters",
-        "Folder hiding",
-        "Tracker blocking",
-        "Device spoofing",
-        "Phone number hidden",
-        "Debug menu",
-        "No VPN/Root checks"
-      ],
-      "allTitle": "Every feature in the current release ({n})",
-      "cards": [
+      "highlightTitle": "Highlights",
+      "highlight": [
         {
           "icon": "shield",
           "title": "SafetyModule",
-          "text": "Module loading is supervised with crash protection. Even if a module fails to load, the app still starts and stays usable.",
-          "tag": "Core"
+          "text": "Module loading is supervised: if a module fails to load, the app still starts and stays usable."
+        },
+        {
+          "icon": "folder",
+          "title": "Archives",
+          "text": "A real archive store for chats, not a hidden tab — it lives on its own and keeps the main list clean."
         },
         {
           "icon": "eye",
           "title": "Invisible reading & typing",
-          "text": "Hide your read status, the typing indicator and file-sending events — each one has its own switch.",
-          "tag": "Privacy"
+          "text": "Hide your read status, the typing indicator and file-sending events — each one has its own switch."
         },
         {
           "icon": "wand",
-          "title": "Ayu Module",
-          "text": "Messages deleted by the other side stay on your device: a native-looking integration, local storage and blur with adjustable transparency.",
-          "tag": "Module"
+          "title": "Ayu module",
+          "text": "Messages deleted by the other side stay on your device: a native-looking integration and local storage."
         },
         {
           "icon": "wifi",
           "title": "Analytics blocking",
-          "text": "Most analytics, tracker and telemetry domains are cut off at the network level. The block list is published separately and updated regularly.",
-          "tag": "Network"
-        },
-        {
-          "icon": "refresh",
-          "title": "Device data spoofing",
-          "text": "Manufacturer, model, fingerprint and other device parameters become yours to set — so your real hardware is not exposed.",
-          "tag": "Privacy"
-        },
-        {
-          "icon": "image",
-          "title": "Chat wallpapers",
-          "text": "Custom chat backgrounds: images, GIFs and video, with a dedicated preview so you can pick the right one.",
-          "tag": "Look & feel"
+          "text": "Tracker and telemetry domains are cut off at the network level."
         },
         {
           "icon": "palette",
-          "title": "AMOLED & transparent themes",
-          "text": "A deep black theme for OLED panels, a transparent interface and native Monet system colouring.",
-          "tag": "Look & feel"
-        },
-        {
-          "icon": "phone",
-          "title": "Call filters",
-          "text": "A whitelist for incoming calls, hidden microphone status and call geolocation: IP, country and city.",
-          "tag": "Calls"
-        },
-        {
-          "icon": "folder",
-          "title": "Folder & tab hiding",
-          "text": "Remove clutter from the interface — for example the all-chats tab or the archive. Includes pin background options.",
-          "tag": "Interface"
-        },
-        {
-          "icon": "user",
-          "title": "Phone number hidden",
-          "text": "Your number is not shown in the profile, yet a single tap reveals or copies it. The module can be disabled at any time.",
-          "tag": "Privacy"
-        },
-        {
-          "icon": "camera",
-          "title": "Screenshots & tools",
-          "text": "Screenshots on every screen, an insider menu with the paths and requests the app uses, quick access to magic-room and up to 150 lines of in-app logs.",
-          "tag": "Tools"
-        },
-        {
-          "icon": "sparkles",
           "title": "Personalisation",
-          "text": "App icon and name, a custom bottom menu, coloured message text and interface localisation — English included.",
-          "tag": "Look & feel"
+          "text": "App icon and name, bottom menu, AMOLED and transparent themes, coloured message text."
         }
-      ]
+      ],
+      "moreTitle": "And much more",
+      "moreLead": "Every feature in the current release — all of it can be switched on and off in the mod settings."
     },
     "updates": {
       "eyebrow": "Release history",
@@ -623,26 +532,47 @@
     "thanks": {
       "eyebrow": "Credits",
       "title": "Special thanks",
-      "lead": "The site and the mod live thanks to the community: testing, bug reports and the platforms that help distribute builds. This page is for credits; some links will appear later.",
+      "lead": "The mod and the site live thanks to the community: ideas, testing and bug reports. These are the people who helped the project appear and stay stable.",
       "items": [
-        { "icon": "globe", "title": "4PDA", "text": "The mod's thread on the largest Russian Android forum. The link will appear here later.", "tag": "soon" },
-        { "icon": "shield", "title": "SafeMax", "text": "Build safety checks and clean-APK verification. Contacts and a link are coming later.", "tag": "soon" },
-        { "icon": "layers", "title": "Kometa", "text": "An extra download mirror and install help. Details will appear later.", "tag": "soon" },
-        { "icon": "heart", "title": "Donors", "text": "Everyone who supported the project with money, testing or ideas. Names will appear after approval.", "tag": "soon" }
+        {
+          "icon": "globe",
+          "title": "4PDA",
+          "text": "For ideas and audience",
+          "href": "https://4pda.to",
+          "note": "4pda.to"
+        },
+        {
+          "icon": "shield",
+          "title": "SafeMax",
+          "text": "For ideas",
+          "href": "https://t.me/safemax_mod",
+          "note": "@safemax_mod"
+        },
+        {
+          "icon": "layers",
+          "title": "Kometa",
+          "text": "For ideas",
+          "href": "https://github.com/KometTeam",
+          "note": "github.com/KometTeam"
+        }
       ],
-      "donorsTitle": "Support the project",
-      "donorsText": "Donation details and the list of supporters will appear later. Even now you can help with testing, bug reports to @infikot and sharing official builds."
+      "peopleTitle": "Donors and subscribers",
+      "peopleText": "Special thanks to everyone who supported the project: donations, testing, bug reports, ideas and kind words. Without you the mod would not be updated this often.",
+      "supportTitle": "Support the project",
+      "supportText": "A donation is the fastest way to help development. Bug reports with logs also count.",
+      "supportBtn": "Support",
+      "supportHref": "https://t.me/infikot_dev/6"
     },
     "modal": {
       "title": "Terms of use",
       "intro": "Before downloading, confirm that you understand the risks:",
       "points": [
-        "This modification is unofficial and violates the MAX terms of use — your account may be restricted or blocked.",
+        "The modification is unofficial and violates the MAX terms of use — your account may be restricted or blocked.",
         "By installing the APK you accept the legal and technical risks yourself.",
-        "The software is provided as is, without warranty; the author is not liable for the consequences of using it.",
-        "The project has no servers or analytics of its own: all data processing stays on your device."
+        "The software is provided “as is”, without warranty; the author is not liable for the consequences of use.",
+        "The project has no servers or analytics of its own: data processing stays on your device."
       ],
-      "more": "Full document texts:",
+      "more": "Full document texts",
       "accept": "Accept and download",
       "decline": "Decline"
     }
