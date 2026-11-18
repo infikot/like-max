@@ -264,7 +264,7 @@
     host.innerHTML =
       '<div class="wrap topbar__inner">' +
         '<a class="brand" href="' + U.home + '">' +
-          '<img src="' + BASE + 'assets/img/icon.webp" alt="" width="34" height="34">' +
+          '<img src="' + BASE + 'assets/img/icon.webp?v=2" alt="" width="34" height="34">' +
           "<b>" + esc(config ? config.appName : "like Max") + "</b>" +
         "</a>" +
         '<nav class="nav" aria-label="' + esc(t("a11y.mainNav")) + '">' + nav + "</nav>" +
@@ -282,7 +282,7 @@
       drawer.innerHTML =
         '<div class="drawer__panel" role="dialog" aria-modal="true" aria-label="' + esc(t("a11y.menu")) + '">' +
           '<div class="drawer__head">' +
-            '<span class="brand"><img src="' + BASE + 'assets/img/icon.webp" alt="" width="34" height="34"><b>' + esc(config ? config.appName : "like Max") + "</b></span>" +
+            '<span class="brand"><img src="' + BASE + 'assets/img/icon.webp?v=2" alt="" width="34" height="34"><b>' + esc(config ? config.appName : "like Max") + "</b></span>" +
             '<button class="icon-btn" type="button" data-drawer-close aria-label="' + esc(t("a11y.close")) + '">' + icon("x") + "</button>" +
           "</div>" +
           '<nav aria-label="' + esc(t("a11y.mainNav")) + '">' +
@@ -312,7 +312,7 @@
         '<div class="footer__grid">' +
           '<div class="footer__brand">' +
             '<a class="brand" href="' + U.home + '">' +
-              '<img src="' + BASE + 'assets/img/icon.webp" alt="" width="34" height="34">' +
+              '<img src="' + BASE + 'assets/img/icon.webp?v=2" alt="" width="34" height="34">' +
               "<b>" + esc(config ? config.appName : "like Max") + "</b>" +
             "</a>" +
             "<p>" + esc(t("footer.about")) + "</p>" +
@@ -496,7 +496,7 @@
       "</div></div>" +
       '<div class="author-grid">' +
         '<div class="card author-card reveal">' +
-          '<img src="' + BASE + 'assets/img/icon.webp" alt="" width="84" height="84">' +
+          '<img src="' + BASE + 'assets/img/icon.webp?v=2" alt="" width="84" height="84">' +
           "<h3>@infikot</h3>" +
           '<p class="author-card__role">' + esc(t("author.role")) + "</p>" +
           "<p>" + esc(t("author.bio")) + "</p>" +
@@ -556,7 +556,7 @@
         "</div>" +
       "</div>" +
       '<div class="hero__aside"><div class="app-card">' +
-        '<img src="' + BASE + 'assets/img/icon.webp" alt="' + esc(c.appName) + '" width="92" height="92">' +
+        '<img src="' + BASE + 'assets/img/icon.webp?v=2" alt="' + esc(c.appName) + '" width="92" height="92">' +
         "<h2>" + esc(c.appName) + "</h2>" +
         '<p class="app-card__by"><a href="' + LINKS.author + '" target="_blank" rel="noopener">@infikot</a></p>' +
         '<span class="app-card__ver"><i class="dot"></i>' + esc(t("hero.actual", { v: c.modVersion })) + "</span>" +

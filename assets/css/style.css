@@ -346,8 +346,6 @@ button {
 }
 .brand img {
   width: 34px; height: 34px;
-  border-radius: 11px;
-  box-shadow: var(--sh-1);
 }
 .brand b { font-size: 1.02rem; font-weight: 700; }
 .brand:hover img { transform: rotate(-4deg) scale(1.05); }
@@ -1218,7 +1216,6 @@ button {
 .author-card img {
   width: 84px; height: 84px;
   margin: 0 auto 14px;
-  border-radius: var(--r-md);
 }
 .author-card h3 { font-size: 1.2rem; }
 .author-card .author-card__role { color: var(--primary); font-size: .88rem; font-weight: 600; margin-top: 4px; }
