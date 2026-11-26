@@ -1,6 +1,30 @@
 {
   "releases": [
     {
+      "version": "0.1.9",
+      "base": "26.42.0 (6936)",
+      "date": "2026-11-26",
+      "kind": "major",
+      "changes": {
+        "ru": [
+          "Перенос на новую версию MAX 26.42.0 (6936)",
+          "Добавлена кастомизация настроек профиля (порядок, скрытие пунктов, разделители, свои кнопки и Цифровой ID)",
+          "Добавлена возможность выбирать скругление кнопок и карточек",
+          "Добавлена возможность выкладывать несколько видео-историй одновременно",
+          "Пофикшен блюр баров чата",
+          "Исправлены многие баги (мод временно весит +30 МБ для проверки стабильности)"
+        ],
+        "en": [
+          "Ported to MAX 26.42.0 (6936)",
+          "Added Profile settings customisation (reordering, hiding items, dividers, custom buttons and Digital ID)",
+          "Added custom button and card rounding styles",
+          "Added publishing multiple video stories at once",
+          "Fixed chat bar blur",
+          "Many bug fixes (temporarily +30 MB build size while testing a stability hypothesis)"
+        ]
+      }
+    },
+    {
       "version": "0.1.5",
       "base": "26.39.0 (6915)",
       "date": "2026-11-08",

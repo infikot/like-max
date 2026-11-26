@@ -1101,7 +1101,7 @@
       updates = res[2];
       kb = res[3];
       legal = res[4];
-      if (!config) config = { appName: "like Max", modVersion: "0.1.5", originalVersion: "26.39.0 (6915)", androidVersion: "9~16", features: [] };
+      if (!config) config = { appName: "like Max", modVersion: "0.1.9", originalVersion: "26.42.0 (6936)", androidVersion: "9~17", features: [] };
       var sw = document.querySelectorAll("[data-lang-btn]");
       for (var i = 0; i < sw.length; i++) {
         sw[i].setAttribute("aria-pressed", sw[i].getAttribute("data-lang-btn") === lang ? "true" : "false");
